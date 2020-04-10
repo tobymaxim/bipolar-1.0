@@ -15,6 +15,7 @@ const User = props => (
     </div>
   )
 
+
 export default () => (
 <Layout>
   <Container>
