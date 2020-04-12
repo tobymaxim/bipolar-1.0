@@ -1,0 +1,33 @@
+.dates-date {
+  font-size: 0.75rem;
+  padding-left: 9px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  color: #fff;
+  font-weight: 550;
+  margin: 0;
+}
+
+.dates-content {
+  font-size: 0.9rem;
+  margin: 0;
+  padding-top: 6px;
+  line-height: 1.25;
+}
+
+.date-query {
+  margin-bottom: 6px;
+}
+  
+.date-query:last-child {
+  margin-bottom: 0px;
+}
+  
+.dates-venue-link {
+  color: #000000;
+  text-decoration: none;
+}
+  
+.dates-venue-link:hover {
+  text-decoration: underline;
+}

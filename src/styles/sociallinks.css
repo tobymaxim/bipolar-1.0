@@ -1,0 +1,138 @@
+/*ICONS*/
+
+.sociallinks {
+    float: left;
+    height: 50px;
+    margin-right: 12px;
+  }
+  .sociallinks:last-child {
+    margin-right: 0px;
+  }
+  .sociallinks-container {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .facebook-icon {
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-color: #000000;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-facebook.svg')
+    }
+  .facebook-icon:hover {
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-facebook-hover.svg')
+    }
+  .bandcamp-icon {
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border: 2px solid;
+    border-color: #000000;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-bandcamp.svg');
+    background-position: center;
+    background-size: 2.8rem;
+    }
+  .bandcamp-icon:hover {
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-bandcamp-hover.svg')
+    }
+  .soundcloud-icon {
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-color: #000000;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-soundcloud.svg')
+    }
+  .soundcloud-icon:hover {
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-soundcloud-hover.svg')
+    }
+  .instagram-icon {
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-color: #000000;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-instagram.svg')
+    }
+  .instagram-icon:hover {
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-instagram-hover.svg')
+    }
+  
+  .residentadvisor-icon {
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    border: 2px solid;
+    border-color: #000000;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-residentadvisor.svg')
+    }
+  .residentadvisor-icon:hover {
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-residentadvisor-hover.svg')
+    }
+  .link-icon {
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    border: 2px solid;
+    border-color: #000000;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-link.svg')
+    }
+  .link-icon:hover {
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-link-hover.svg')
+    }
+  .mail-icon {
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    border: 2px solid;
+    border-color: #000000;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-mail.svg')
+    }
+  .mail-icon:hover {
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-mail-hover.svg')
+    }
+
+@media screen and (max-width: 576px) {
+
+.sociallinks-container {
+  margin-top: -6px;
+  margin-bottom: 12px;
+  padding: 12px;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  }
+}

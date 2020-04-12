@@ -1,17 +1,77 @@
 import React from "react"
-import Container from "../components/container"
+import { graphql, } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
+import "../styles/index.css"
+import Sociallinks from "../components/Sociallinks"
+import Nextdates from "../components/Nextdates"
 
-export default () => (
-<Layout>
-  <Container>
-<div>
-<h2>About</h2>
-    <p>Bipølar. is a berlin-based brand and label of musicians, artists & creative minds which has been established in 2016. In order to visualize the contrast between intuition, structure and aesthetics in contemporary art, we follow the vision to keep the authentic spirit of our human roots alive. The way we come together is inspired by respecting the holistic principles.
-    <br />
-    <br />
-    We believe in the emerging art as the strongest revolutionary force, because it is based on human creativity, self-determination and self-government - essential for finding creative and innovative ways which lead us into future. Bipølar. is defined by the union of spirit, art & music.</p>
-  </div>
-  </Container>
-  </Layout>
-)
+const AboutPage = ({ data }) => (
+  
+    <Layout>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <div class="main-container">
+        <div class="left-container">
+            <div class="blackbox"><h1 class="headline1">About</h1></div>
+            <div class="blog-post">
+            <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+              <div>
+                <img className="about-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
+                <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+              </div>
+            )}
+            </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="blackbox">
+              <h1 class="headline1">Next Dates</h1>
+            </div>
+            <Nextdates data={data} />
+            <Sociallinks data={data} />
+        </div>
+      </div>
+    </Layout>
+  )
+  
+export default AboutPage
+
+
+export const query = graphql`
+  query {
+    allWordpressPage(filter: {template: {eq: "tpl-about.php"}}) {
+      edges {
+        node {
+          featured_media {
+            localFile {
+              childImageSharp {
+                resolutions(height: 566, width: 440) {
+                  src
+                }
+              }
+            }
+          }
+          content
+        }
+      }
+    }
+    allTribeEvents {
+      edges {
+        node {
+          title
+          categories {
+            name
+          }
+          website
+          venue {
+            venue
+            website
+            city
+            country
+          }
+          start_date(formatString: "D. MMMM YYYY")
+        }
+      }
+    }
+  }    
+`

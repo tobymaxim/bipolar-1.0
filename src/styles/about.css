@@ -1,0 +1,29 @@
+.about-text {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.about-image {
+    width: 220px;
+    float: left;
+    margin-right: 12px;
+}
+
+.about-image-content {
+    width: 100%;
+    height: auto;
+    padding-top: 6px;
+    margin-bottom: -23px !important;
+}
+
+@media screen and (max-width: 576px) {
+
+.about-image {
+    width: 100%;
+    margin-bottom: 12px;    
+}
+.about-image-content {
+    padding-top: 0px;
+    margin-bottom: -11px !important;
+}
+}
