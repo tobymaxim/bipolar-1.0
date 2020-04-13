@@ -12,10 +12,21 @@ const LabelPage = ({ data }) => (
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <div class="main-container">
         <div class="left-container">
-            <div class="blackbox"><h1 class="headline1">Label</h1></div>
+            <div class="blackbox"><h1 class="headline1">BPLR000</h1></div>
             <div class="blog-post">
-            <div className="label-images-container">{data.allWordpressPage.edges.map(post =>
-                <a href="../bplr000"><img className="label-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} /></a>
+            <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+              <div>
+                <img className="label-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
+                <div className="bandcamp-iframe">
+                  {post.node.acf && post.node.acf.bandcamp_iframe &&
+                  <div className="bandcamp-iframe-self" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.bandcamp_iframe }} />}
+                </div>
+                <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+                {post.node.acf && post.node.acf.youtube_iframe &&
+                <div className="label-youtube-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
+                {post.node.acf && post.node.acf.video_credits &&
+                <div className="label-youtube-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.video_credits }} />}
+              </div>
             )}
             </div>
             </div>
@@ -36,19 +47,24 @@ export default LabelPage
 
 export const query = graphql`
   query {
-    allWordpressPage(filter: {template: {eq: "tpl-label.php"}}, sort: {fields: guid}) {
+    allWordpressPage(filter: {template: {eq: "tpl-label.php"}}) {
       edges {
         node {
           featured_media {
             localFile {
               childImageSharp {
-                resolutions(height: 530, width: 530) {
+                resolutions(height: 550, width: 550) {
                   src
                 }
               }
             }
           }
-          title
+          content
+          acf {
+            bandcamp_iframe
+            youtube_iframe
+            video_credits
+          }
         }
       }
     }

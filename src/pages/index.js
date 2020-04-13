@@ -61,7 +61,6 @@ export const query = graphql`
             youtube_iframe
             facebook
             link
-
           }
           featured_media{
             localFile{

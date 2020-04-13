@@ -128,13 +128,13 @@
 @media screen and (max-width: 576px) {
 
 .sociallinks-container {
-  padding-top: -6px;
-  padding-bottom: 12px;
+
+  margin-bottom: -12px;
   padding: 12px;
-  justify-content: left;
+  padding-top: 18px;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #ffffff;
-  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
   }
 }
