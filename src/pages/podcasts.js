@@ -12,21 +12,10 @@ const LabelPage = ({ data }) => (
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <div class="main-container">
         <div class="left-container">
-            <div class="blackbox"><h1 class="headline1">Podcasts</h1></div>
-            <div class="blog-post">
+            <div class="blackbox"><h1 class="headline1">Bipølar. Series</h1></div>
             <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
-              <div>
-                <img className="label-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
-                <div className="bandcamp-iframe">
-                  {post.node.acf && post.node.acf.bandcamp_iframe &&
-                  <div className="bandcamp-iframe-self" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.bandcamp_iframe }} />}
-                </div>
                 <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
-                {post.node.acf && post.node.acf.youtube_iframe &&
-                <div className="label-youtube-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
-              </div>
             )}
-            </div>
             </div>
         </div>
         <div class="right-container">
@@ -45,23 +34,10 @@ export default LabelPage
 
 export const query = graphql`
   query {
-    allWordpressPage(filter: {template: {eq: "tpl-label.php"}}) {
+    allWordpressPage(filter: {template: {eq: "tpl-podcasts.php"}}) {
       edges {
         node {
-          featured_media {
-            localFile {
-              childImageSharp {
-                resolutions(height: 550, width: 550) {
-                  src
-                }
-              }
-            }
-          }
           content
-          acf {
-            bandcamp_iframe
-            youtube_iframe
-          }
         }
       }
     }

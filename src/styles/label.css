@@ -12,6 +12,30 @@
     margin-bottom: -7px;
 }
 
+.label-image-column {
+    flex: 50%;
+    display: flex;
+    max-width: 33.3333333333%;
+}
+
+.label-image-caption {
+    font-size: 1rem;
+    margin-top: 6px;
+    content: "";
+    flex: 50%;
+    clear: both;
+}
+
+.label-image-caption-left {
+    text-align: left;
+}
+
+.label-image-caption-right {
+    text-align: right;
+}
+
+
+
 /*BPLR Pages*/
 
 .label-image {

@@ -12,7 +12,7 @@ const LabelPage = ({ data }) => (
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <div class="main-container">
         <div class="left-container">
-            <div class="blackbox"><h1 class="headline1">Label</h1></div>
+            <div class="blackbox"><h1 class="headline1">Events</h1></div>
             <div class="blog-post">
             <div className="label-images-container">{data.allWordpressPage.edges.map(post =>
                 <div>
