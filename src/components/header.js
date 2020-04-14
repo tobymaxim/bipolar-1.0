@@ -27,6 +27,9 @@ export default ({ children }) => (
     </header>
     <header className="header-mobile">
       <div className="header-mobile-container">
+        <div class="header-mobile-column-left">asd</div>
+        <div class="header-mobile-column-middle"><img className="header-mobile-logo" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/bipolar_logo.svg" /></div>
+        <div class="header-mobile-column-right"><img className="menu-icon" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/menu-icon-0.svg" /></div>
         
       </div>
     </header>

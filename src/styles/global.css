@@ -46,20 +46,10 @@ html {
 
 /*MOBILE DEVICES*/
 
-@media screen and (min-width: 577px) {
-.header-mobile {
-  display: none;
-}
-}
-
 @media screen and (max-width: 576px) {
 
 .header {
   display: none;
-}
-
-.header-mobile-container {
-  height: 60px;
 }
 
 .main-container {
