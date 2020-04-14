@@ -1,5 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
+import DrawerToggleButton from "../components/SideDrawer/DrawerToggleButton"
+
+/*import SideDrawer from "./SideDrawer/SideDrawer"
+import Backdrop from "./Backdrop/Backdrop"
+
+<SideDrawer />
+<Backdrop />
+*/
+
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -28,14 +37,13 @@ export default ({ children }) => (
     <header className="header-mobile">
       <div className="header-mobile-container">
         <div class="header-mobile-column-left">asd</div>
-        <div class="header-mobile-column-middle"><img className="header-mobile-logo" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/bipolar_logo.svg" /></div>
-        <div class="header-mobile-column-right"><img className="menu-icon" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/menu-icon-0.svg" /></div>
-        
+        <div class="header-mobile-column-middle"><img className="header-mobile-logo" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/bipolar_logo.svg"></img></div>
+        <div class="header-mobile-column-right"><DrawerToggleButton /></div>
+
+
       </div>
-    </header>
+    </header>  
   {children}
   </div>
-
-
-
 )
+
