@@ -6,7 +6,7 @@ import "../styles/index.css"
 import Sociallinks from "../components/Sociallinks"
 import Nextdates from "../components/Nextdates"
 
-const ArtistPage = ({ data }) => (
+const ArtistsPage = ({ data }) => (
   
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -31,7 +31,7 @@ const ArtistPage = ({ data }) => (
     </Layout>
   )
   
-export default ArtistPage
+export default ArtistsPage
 
 
 export const query = graphql`

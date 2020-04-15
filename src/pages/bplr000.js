@@ -22,6 +22,8 @@ const LabelPage = ({ data }) => (
                   <div className="bandcamp-iframe-self" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.bandcamp_iframe }} />}
                 </div>
                 <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+                <div class="artists-titles">Official Music Video</div>
+                <hr className="artists-hr" />
                 {post.node.acf && post.node.acf.youtube_iframe &&
                 <div className="label-youtube-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
                 {post.node.acf && post.node.acf.video_credits &&

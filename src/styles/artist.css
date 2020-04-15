@@ -1,0 +1,107 @@
+.artists-container {
+    display: flex;
+}
+
+.artists-container-left {
+    width: 220px;
+    margin-right: 12px;
+}
+
+.artists-container-right {
+
+}
+
+.artists-about-text {
+    margin-bottom: 12px;
+    margin-top: 0px;
+}
+
+.artists-image {
+    width: 220px; 
+    float: left;
+    margin-right: 12px;
+}
+
+.artists-post-content {
+    text-align: justify;
+    min-height: 265px;
+}
+
+.artists-sociallinks-container {
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    background-color: #ffffff;
+}
+
+.artists-sociallinks {
+    margin-top: 12px;
+    float: left;
+    height: 50px;
+    margin-right: 6px;
+}
+
+.artists-sociallinks:last-child {
+    margin-right: 0px;
+}
+
+.artists-youtube-iframe {
+    margin: 0;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 12px;
+}
+
+.artists-bandcamp-iframe {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    height: 275px;
+}
+
+.artists-soundcloud-container {
+    margin-bottom: -18px;
+}
+
+.artists-soundcloud-iframe {
+    margin-bottom: 6px;
+}
+
+.artists-titles {
+    width: 100%;
+    font-size: 1.125rem;
+    margin: 0;
+    line-height: 1.125;
+    font-weight: 730;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+
+.artists-hr {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    background-color: #eee;
+    width: 100%;
+}
+
+.artists-spacer {
+    padding-top: 12px !important;
+}
+
+@media screen and (max-width: 576px) {
+
+.artists-container-left {
+    width: 100%;
+    margin-right: 12px;
+}
+
+.artists-container-right {
+    width: 100%;
+}
+
+.artists-image {
+    width: 100%;
+}
+
+
+}

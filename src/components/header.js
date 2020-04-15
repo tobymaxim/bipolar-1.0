@@ -39,8 +39,6 @@ export default ({ children }) => (
         <div class="header-mobile-column-left">asd</div>
         <div class="header-mobile-column-middle"><img className="header-mobile-logo" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/bipolar_logo.svg"></img></div>
         <div class="header-mobile-column-right"><DrawerToggleButton /></div>
-
-
       </div>
     </header>  
   {children}
