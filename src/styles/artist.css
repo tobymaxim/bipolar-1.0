@@ -36,6 +36,7 @@
     align-items: center;
     width: 220px;
     background-color: #ffffff;
+    display: flex;
 }
 
 .artists-sociallinks {
@@ -43,6 +44,7 @@
     float: left;
     height: 50px;
     margin-right: 6px;
+    display: flex;
 }
 
 .artists-sociallinks:last-child {
