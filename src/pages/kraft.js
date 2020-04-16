@@ -10,7 +10,7 @@ import Pastdates from "../components/Pastdates"
 const KraftPage = ({ data }) => (
 
   <Layout>
-    <SEO title="Kraft" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Izzi Bizzi" keywords={[`gatsby`, `application`, `react`]} />
     <div class="main-container">
       <div class="left-container">
         <div class="blackbox"><h1 class="headline1">Kraft</h1></div>
@@ -28,19 +28,22 @@ const KraftPage = ({ data }) => (
                     <a className="artists-sociallinks" href="https://www.instagram.com/bipolar.berlin/" target="_blank" rel="noopener noreferrer"><div className="instagram-icon"></div></a>
                   </div>
                   <a className="button-presskit" href="https://drive.google.com/open?id=1Xb9WTVpZ36BjvlJ4vxldsH0wVuz3FEbi" target="_blank" rel="noopener noreferrer"><div className="button-general">Download Presskit</div></a>
+                  {post.node.acf && post.node.acf.credits &&
+                    <div className="artist-credits" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
+                </div>
+                <div className="artists-container-right">
+                  <div className="artists-post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+                  
                   <div className="artist-tag-container">
                     <div className="post-tag">#{post.node.acf.tag_1}</div>
                     <div className="post-tag">#{post.node.acf.tag_2}</div>
                     <div className="post-tag">#{post.node.acf.tag_3}</div>
                     <div className="post-tag">#{post.node.acf.tag_4}</div>
                   </div>
-                </div>
-                <div className="artists-container-right">
-                  <div className="artists-post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
-                  {post.node.acf && post.node.acf.credits &&
-                    <div className="artist-credits" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
                   {post.node.acf && post.node.acf.credits &&
                     <div className="artist-credits-mobile" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
+                  
+
                 </div>
               </div>
             </div>
@@ -48,14 +51,14 @@ const KraftPage = ({ data }) => (
           </div>
         </div>
         <div class="blackbox"><h1 class="headline1">Projects</h1></div>
-        <div class="artist-blog-post">
-          <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
-            <div>
-              {post.node.acf.image_3.localFile && post.node.acf.image_3.localFile.url &&
-                <div className="art-projects"><a href={post.node.acf.image_3.localFile.url} target="_blank"><img className="art-imagegallery" src={post.node.acf.image_3.localFile.childImageSharp.resolutions.src} /></a></div>}
-            </div>
-          )}</div>
-        </div>
+<div class="artist-blog-post">
+  <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+    <div>
+      {post.node.acf.image_3.localFile && post.node.acf.image_3.localFile.url &&
+        <div className="art-projects"><a href={post.node.acf.image_3.localFile.url} target="_blank"><img className="art-imagegallery" src={post.node.acf.image_3.localFile.childImageSharp.resolutions.src} /></a></div>}
+    </div>
+  )}</div>
+</div>
       </div>
       <div class="right-container">
         <div>
@@ -141,21 +144,21 @@ export const query = graphql`
               }
             }
             image_3 {
-                localFile {
-                  childImageSharp {
-                    resolutions(fit: COVER, width: 1408, height: 1056) {
-                      src
-                    }
+              localFile {
+                childImageSharp {
+                  resolutions(fit: COVER, width: 1408, height: 1056) {
+                    src
                   }
-                  url
                 }
+                url
               }
+            }
           }
           content
         }
       }
     }
-    allTribeEvents(filter: {title: {eq: "Kraft"}}) {
+    allTribeEvents(filter: {title: {eq: "Izzi Bizzi"}}) {
         edges {
           node {
             title

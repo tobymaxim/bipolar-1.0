@@ -82,7 +82,7 @@
 }
 
 .artists-hr {
-    margin-top: 0px;
+    margin-top: 9px;
     margin-bottom: 6px;
     background-color: #eee;
     width: 100%;
@@ -106,7 +106,7 @@
 
 .artist-tag-container {
     padding-top: 0px;
-    margin-top: 22px !important;
+    margin-top: 3px;
     margin-bottom: 2px;
     display: inline-block;
 }
@@ -114,7 +114,7 @@
 .artist-credits {
     font-size: 0.9rem !important;
     font-family: Montsserat, sans-serif !important;
-    margin-top: 0px;
+    margin-top: 24px;
     display: inline-block;
     line-height: 1.35rem;
     margin-bottom: 6px;
@@ -205,6 +205,10 @@
     margin-bottom: 6px;
 }
 
+.artist-about-container {
+    margin-top: 30px;
+}
+
 .artists-youtube-iframe {
     margin-bottom: 6px;
 }
@@ -214,7 +218,7 @@
 }
 
 .artist-tag-container {
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 
 .artists-post-content {

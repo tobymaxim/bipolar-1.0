@@ -28,19 +28,22 @@ const IzziBizziPage = ({ data }) => (
                     <a className="artists-sociallinks" href="https://www.instagram.com/bipolar.berlin/" target="_blank" rel="noopener noreferrer"><div className="instagram-icon"></div></a>
                   </div>
                   <a className="button-presskit" href="https://drive.google.com/open?id=1Xb9WTVpZ36BjvlJ4vxldsH0wVuz3FEbi" target="_blank" rel="noopener noreferrer"><div className="button-general">Download Presskit</div></a>
+                  {post.node.acf && post.node.acf.credits &&
+                    <div className="artist-credits" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
+                </div>
+                <div className="artists-container-right">
+                  <div className="artists-post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+                  
                   <div className="artist-tag-container">
                     <div className="post-tag">#{post.node.acf.tag_1}</div>
                     <div className="post-tag">#{post.node.acf.tag_2}</div>
                     <div className="post-tag">#{post.node.acf.tag_3}</div>
                     <div className="post-tag">#{post.node.acf.tag_4}</div>
                   </div>
-                </div>
-                <div className="artists-container-right">
-                  <div className="artists-post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
-                  {post.node.acf && post.node.acf.credits &&
-                    <div className="artist-credits" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
                   {post.node.acf && post.node.acf.credits &&
                     <div className="artist-credits-mobile" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
+                  
+
                 </div>
               </div>
             </div>
