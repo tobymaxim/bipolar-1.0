@@ -1,19 +1,24 @@
 .about-text {
-    margin-top: 6px;
+    margin-top: 0px;
     margin-bottom: 12px;
 }
 
 .about-image {
-    width: 220px;
+    width: 205px;
     float: left;
     margin-right: 12px;
+    padding-top: 9px;
 }
 
-.about-image-content {
-    width: 100%;
-    height: auto;
-    padding-top: 6px;
-    margin-bottom: -23px !important;
+.about-images {
+    opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    max-width: 100%;
+}
+
+.about-images:hover {
+    opacity: 0.85;
 }
 
 @media screen and (max-width: 576px) {

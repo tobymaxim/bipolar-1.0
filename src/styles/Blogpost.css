@@ -14,10 +14,26 @@
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
   }
 
+.blog-post-general {
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  padding: 12px;
+  padding-top: 12px;
+  background-color: #ffffff;
+  padding-right: 18px;
+}
+
 .blog-images {
   width: 265px; 
   float: left;
   margin-right: 12px;
+  opacity: 1;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.blog-images:hover {
+  opacity: 0.85;
 }
 
 .content-container {

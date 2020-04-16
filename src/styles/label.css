@@ -43,11 +43,18 @@
     height: 275px;
     float: left;
     margin-right: 12px;
+    opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.label-image:hover {
+    opacity: 0.85;
 }
 
 .label-text {
     margin-top: 0px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 
 .bandcamp-iframe {

@@ -13,26 +13,41 @@ const LabelPage = ({ data }) => (
       <div class="main-container">
         <div class="left-container">
             <div class="blackbox"><h1 class="headline1">BPLR000</h1></div>
-            <div class="blog-post">
+            <div class="blog-post-general">
             <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
               <div>
-                <img className="label-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
+                <a href={post.node.featured_media.localFile.childImageSharp.resolutions.src}><img className="label-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} /></a>
                 <div className="bandcamp-iframe">
                   {post.node.acf && post.node.acf.bandcamp_iframe &&
                   <div className="bandcamp-iframe-self" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.bandcamp_iframe }} />}
                 </div>
                 <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
-                <div class="artists-titles">Official Music Video</div>
-                <hr className="artists-hr" />
+               
+                </div>
+                 )}
+                 </div>
+                 </div>
+
+                 
+                 <div class="blackbox">
+          <h1 class="headline1">Official Music Video</h1>
+        </div>
+        <div class="blog-post-general">
+
+        <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+                <div>
                 {post.node.acf && post.node.acf.youtube_iframe &&
                 <div className="label-youtube-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
                 {post.node.acf && post.node.acf.video_credits &&
                 <div className="label-youtube-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.video_credits }} />}
-              </div>
-            )}
+                
+                </div>
+                )}
+            
             </div>
-            </div>
-        </div>
+            </div></div>
+            
+
         <div class="right-container">
             <div class="blackbox">
               <h1 class="headline1">Next Dates</h1>

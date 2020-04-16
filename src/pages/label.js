@@ -15,15 +15,17 @@ const LabelPage = ({ data }) => (
             <div class="blackbox"><h1 class="headline1">Label</h1></div>
             <div class="blog-post">
             <div className="label-images-container">{data.allWordpressPage.edges.map(post =>
-                <div>
-                <a href="../bplr000">
-                  <img className="label-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
-                <div className="label-image-column">
-                <div className="label-image-caption label-image-caption-left"><strong>Izzi Bizzi</strong></div>
-                <div className="label-image-caption label-image-caption-right">BPLR000</div>
+              <div>
+                <div className="images-row">
+                <div class="images-column">
+                  <figure>
+                    <a href="../bplr000"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/BPLR000_STFU_EP-e1586996225800.png" />
+                    <figcaption className="artists-caption">BPLR000</figcaption>
+                    </a>
+                  </figure>
                 </div>
-                </a>
                 </div>
+              </div>
             )}
             </div>
             </div>

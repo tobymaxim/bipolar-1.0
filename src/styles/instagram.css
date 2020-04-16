@@ -14,10 +14,8 @@
       margin: auto;
       margin-bottom: 12px;
       overflow: hidden;
-      box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
       border-radius: 0px;
-      padding: 12px;
-      padding-top: 12px;
+      padding-top: 6px;
       background-color: #ffffff;
     }
   .instagram-container:hover {

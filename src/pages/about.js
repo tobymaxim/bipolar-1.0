@@ -13,7 +13,7 @@ const AboutPage = ({ data }) => (
       <div class="main-container">
         <div class="left-container">
             <div class="blackbox"><h1 class="headline1">About</h1></div>
-            <div class="blog-post">
+            <div class="blog-post-general">
             <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
               <div>
                 <img className="about-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
@@ -22,6 +22,17 @@ const AboutPage = ({ data }) => (
             )}
             </div>
             </div>
+            
+            <div class="blackbox"><h1 class="headline1">Crew</h1></div>
+            <div class="blog-post-general">
+            <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+              <div>
+                <a href={post.node.acf.image_1.localFile.url}><img className="about-images" src={post.node.acf.image_1.localFile.childImageSharp.resolutions.src} /></a> 
+              </div>
+            )}
+            </div>
+            </div>
+
         </div>
         <div class="right-container">
             <div class="blackbox">
@@ -42,6 +53,18 @@ export const query = graphql`
     allWordpressPage(filter: {template: {eq: "tpl-about.php"}}) {
       edges {
         node {
+          acf {
+            image_1 {
+              localFile {
+                url
+                childImageSharp {
+                  resolutions(width: 710, height: 330) {
+                    src
+                  }
+                }
+              }
+            }
+          }
           featured_media {
             localFile {
               childImageSharp {

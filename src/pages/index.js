@@ -64,11 +64,12 @@ export const query = graphql`
           }
           featured_media{
             localFile{
-                childImageSharp{
-                  resolutions(height: 530, width: 530) {
-                    src
-                  }
+              url
+              childImageSharp{
+                resolutions(height: 530, width: 530) {
+                  src
                 }
+              }
             }
           alt_text
         }
@@ -98,7 +99,7 @@ export const query = graphql`
         node {
           localFile {
             childImageSharp {
-              resolutions(height: 580, width: 580, fit: COVER, cropFocus: CENTER) {
+              resolutions(fit: COVER, cropFocus: CENTER) {
                 src
               }
             }
