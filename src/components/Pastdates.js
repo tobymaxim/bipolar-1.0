@@ -3,7 +3,6 @@ import "../styles/index.css"
 
 const Nextdates = ({ data }) => (
   <div class="blog-post">
-    
     <div>{data.allTribeEvents.edges.map(post => 
       (
         <div class="date-query">

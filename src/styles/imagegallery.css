@@ -1,0 +1,38 @@
+.artist-imagegallery {
+    margin-top: 6px;
+    opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.artist-imagegallery:hover {
+    margin-top: 6px;
+    opacity: 0.85;
+}
+
+.imagegallery-li {
+margin-bottom: -7px !important;
+}
+
+.imagegallery-ul {
+    margin-bottom: 12px;;
+}
+
+@media screen and (max-width: 576px) {
+
+.artist-imagegallery {
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.imagegallery-li {
+    margin-bottom: -12px !important;
+}
+
+.imagegallery-ul {
+    margin-bottom: 17px;
+}
+
+}

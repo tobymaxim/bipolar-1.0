@@ -100,9 +100,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-figure {
-  margin: 1em 40px;
-}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -410,7 +408,7 @@ figure {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 pre {
   margin-left: 0;

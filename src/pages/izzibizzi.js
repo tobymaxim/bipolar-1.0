@@ -5,6 +5,8 @@ import SEO from "../components/seo"
 import "../styles/index.css"
 import Sociallinks from "../components/Sociallinks"
 import Nextdates from "../components/Nextdates"
+import Pastdates from "../components/Pastdates"
+import Imagegallery from "../components/Imagegallery"
 
 const IzziBizziPage = ({ data }) => (
   
@@ -12,20 +14,25 @@ const IzziBizziPage = ({ data }) => (
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <div class="main-container">
         <div class="left-container">
+            
+            
             <div class="blackbox"><h1 class="headline1">Izzi Bizzi</h1></div>
-            <div class="blog-post">
+            <div class="artist-blog-post">
             <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
-                                <div class="artists-titles">Biography</div>
-                <hr className="artists-hr" />
               <div className="artists-container">
                 <div className="artists-container-left">
-
-                    <img className="artists-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
+                    
+                  <figure>
+                      <a href="../izzibizzi"><img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
+                      <figcaption className="artists-caption">Izzi Bizzi</figcaption>
+                      </a>
+                    </figure>
+                    
                     <div className="artists-sociallinks-container">
+                    <a className="artists-sociallinks" href="https://bipolarberlin.bandcamp.com/" target="_blank" rel="noopener noreferrer"><div className="residentadvisor-icon"></div></a>
+                    <a className="artists-sociallinks" href="https://www.soundcloud.com/bipolarberlin/" target="_blank" rel="noopener noreferrer"><div className="soundcloud-icon"></div></a>
                         <a className="artists-sociallinks" href="https://www.facebook.com/bipolar.berlin/" target="_blank" rel="noopener noreferrer"><div className="facebook-icon"></div></a>
-                        <a className="artists-sociallinks" href="https://bipolarberlin.bandcamp.com/" target="_blank" rel="noopener noreferrer"><div className="bandcamp-icon"></div></a>
-                        <a className="artists-sociallinks" href="https://www.soundcloud.com/bipolarberlin/" target="_blank" rel="noopener noreferrer"><div className="soundcloud-icon"></div></a>
                         <a className="artists-sociallinks" href="https://www.instagram.com/bipolar.berlin/" target="_blank" rel="noopener noreferrer"><div className="instagram-icon"></div></a>
                     </div>
                 </div> 
@@ -33,34 +40,58 @@ const IzziBizziPage = ({ data }) => (
                     <div className="artists-post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
                 </div>
               </div>
-              <div class="artists-spacer">
-                <div class="artists-titles">Releases</div>
-                <hr className="artists-hr" />
+
+            </div>
+            )}
+            </div>
+            </div>
+
+
+            <div class="blackbox"><h1 class="headline1">Releases</h1></div>
+            <div class="artist-blog-post">
+            <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+            <div>
                  <div className="artists-bandcamp-iframe">
                      {post.node.acf && post.node.acf.bandcamp_iframe &&
                      <div className="bandcamp-iframe-self" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.bandcamp_iframe }} />}
                   </div>
-              </div>
+
                 {post.node.acf && post.node.acf.youtube_iframe &&
                     <div className="artists-youtube-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
-                <div class="artists-spacer">
-                <div class="artists-titles">Music</div>
-                <hr className="artists-hr" />
+                </div>
+
+            )}
+            </div>
+            </div>
+
+
+            <div class="blackbox"><h1 class="headline1">Music</h1></div>
+            <div class="artist-blog-post">
+            <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+            <div>
+
                 <div className="artists-soundcloud-container">
                 {post.node.acf && post.node.acf.soundcloud_iframe &&
                 <div className="artists-soundcloud-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.soundcloud_iframe }} />}
                 </div>
                 </div>
-            </div>
+
             )}
             </div>
             </div>
+
+
         </div>
         <div class="right-container">
+            <Imagegallery data={data} />
             <div class="blackbox">
               <h1 class="headline1">Next Dates</h1>
             </div>
-            <Nextdates data={data} />
+            <Nextdates data={data} /> 
+            <div class="blackbox-pastdates">
+              <h1 class="headline1">Past Dates</h1>
+            </div>
+            <Pastdates data={data} />
             <Sociallinks data={data} />
         </div>
       </div>
@@ -94,6 +125,26 @@ export const query = graphql`
             bandcamp_iframe
             youtube_iframe
             soundcloud_iframe
+            image_1 {
+              localFile {
+                childImageSharp {
+                  resolutions(fit: COVER) {
+                    src
+                  }
+                }
+                url
+              }
+            }
+            image_2 {
+              localFile {
+                childImageSharp {
+                  resolutions(fit: COVER) {
+                    src
+                  }
+                }
+                url
+              }
+            }
           }
           content
         }

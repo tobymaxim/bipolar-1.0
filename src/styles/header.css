@@ -3,6 +3,7 @@
   width: 100%;
   position: fixed;
   box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.75);
+  z-index: 500;
 }
 
 .header {
@@ -118,6 +119,8 @@
   padding-top: 0px;
   padding-bottom: 0px;
   padding-right: 12px;
+  background-color: #000000;
+  border: 0;
 }
 
 .side-drawer {

@@ -1,5 +1,10 @@
 /*ICONS*/
 
+.blackbox-sociallinks {
+  background-color: black;
+  display: none;
+}
+
 .sociallinks {
     float: left;
     height: 50px;
@@ -129,12 +134,20 @@
 
 .sociallinks-container {
 
-  margin-bottom: -12px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   padding: 12px;
-  padding-top: 18px;
-  justify-content: center;
+  padding-top: 12px;
+  justify-content: left;
   align-items: center;
   width: 100%;
   background-color: #ffffff;
   }
+
+.blackbox-sociallinks {
+  margin-top: -12px;
+  background-color: black;
+  display: block;
+}
+
 }
