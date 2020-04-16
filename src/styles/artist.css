@@ -112,12 +112,13 @@
 }
 
 .artist-credits {
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
     font-family: Montsserat, sans-serif !important;
-    margin-top: 24px;
+    margin-top: 20px;
     display: inline-block;
     line-height: 1.35rem;
-    margin-bottom: 6px;
+    margin-bottom: 2px;
+    font-weight: 400;
 }
 
 .artist-credits-mobile {
@@ -175,9 +176,8 @@
 }
 
 .artist-credits-mobile {
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
     font-family: Montsserat, sans-serif !important;
-    margin-top: 0px;
     display: inline-block;
     line-height: 1.35rem;
     margin-bottom: 6px;
