@@ -21,7 +21,6 @@ const Blogpost = ({ data }) => (
             {post.node.acf && post.node.acf.youtube_iframe &&
               <div className="youtube_iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
             <div className="social-icons">
-
               {post.node.acf && post.node.acf.facebook &&
                 <a className="sociallinks" href={post.node.acf && post.node.acf.facebook} target="_blank" rel="noopener noreferrer"><div className="facebook-icon"></div></a>}
               {post.node.acf && post.node.acf.resident_advisor &&

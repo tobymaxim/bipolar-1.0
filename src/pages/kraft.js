@@ -33,7 +33,7 @@ const KraftPage = ({ data }) => (
                 </div>
                 <div className="artists-container-right">
                   <div className="artists-post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
-                  
+
                   <div className="artist-tag-container">
                     <div className="post-tag">#{post.node.acf.tag_1}</div>
                     <div className="post-tag">#{post.node.acf.tag_2}</div>
@@ -42,7 +42,7 @@ const KraftPage = ({ data }) => (
                   </div>
                   {post.node.acf && post.node.acf.credits &&
                     <div className="artist-credits-mobile" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
-                  
+
 
                 </div>
               </div>
@@ -51,14 +51,14 @@ const KraftPage = ({ data }) => (
           </div>
         </div>
         <div class="blackbox"><h1 class="headline1">Projects</h1></div>
-<div class="artist-blog-post">
-  <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
-    <div>
-      {post.node.acf.image_3.localFile && post.node.acf.image_3.localFile.url &&
-        <div className="art-projects"><a href={post.node.acf.image_3.localFile.url} target="_blank"><img className="art-imagegallery" src={post.node.acf.image_3.localFile.childImageSharp.resolutions.src} /></a></div>}
-    </div>
-  )}</div>
-</div>
+        <div class="artist-blog-post">
+          <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+            <div>
+              {post.node.acf.image_3.localFile && post.node.acf.image_3.localFile.url &&
+                <div className="art-projects"><a href={post.node.acf.image_3.localFile.url} target="_blank"><img className="art-imagegallery" src={post.node.acf.image_3.localFile.childImageSharp.resolutions.src} /></a></div>}
+            </div>
+          )}</div>
+        </div>
       </div>
       <div class="right-container">
         <div>

@@ -33,7 +33,7 @@ const IzziBizziPage = ({ data }) => (
                 </div>
                 <div className="artists-container-right">
                   <div className="artists-post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
-                  
+
                   <div className="artist-tag-container">
                     <div className="post-tag">#{post.node.acf.tag_1}</div>
                     <div className="post-tag">#{post.node.acf.tag_2}</div>
@@ -42,7 +42,7 @@ const IzziBizziPage = ({ data }) => (
                   </div>
                   {post.node.acf && post.node.acf.credits &&
                     <div className="artist-credits-mobile" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
-                  
+
 
                 </div>
               </div>
