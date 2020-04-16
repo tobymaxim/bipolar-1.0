@@ -79,7 +79,7 @@
 
 .artists-hr {
     margin-top: 0px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     background-color: #eee;
     width: 100%;
 }
@@ -100,7 +100,40 @@
     background-color: black;
 }
 
+.artist-tag-container {
+    padding-top: 0px;
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.artist-credits {
+    font-size: 0.9rem !important;
+    font-family: Montsserat, sans-serif !important;
+    margin-top: 12px;
+    display: inline-block;
+    line-height: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.artist-credits-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 576px) {
+
+.artist-credits {
+    display: none;
+}
+
+.artist-credits-mobile {
+    font-size: 0.9rem !important;
+    font-family: Montsserat, sans-serif !important;
+    margin-top: 0px;
+    display: inline-block;
+    line-height: 1.35rem;
+    margin-bottom: 6px;
+}
 
 .artists-container {
     display: grid;
@@ -120,7 +153,7 @@
 }
 
 .artists-about-text {
-    margin-top: 12px;
+    margin-top: 18px;
     margin-bottom: 6px;
 }
 
@@ -130,6 +163,14 @@
 
 .blackbox-pastdates {
     margin-top: -12px;
+}
+
+.artist-tag-container {
+    margin-bottom: 0px;
+}
+
+.artists-post-content {
+    margin-top: -6px;
 }
 
 }

@@ -22,7 +22,7 @@ const ArtistsPage = ({ data }) => (
                   <div class="images-column">
                     <figure>
                       <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/izzibizzi-artist.jpg" />
-                      <figcaption className="artists-caption">Izzi Bizzi</figcaption>
+                      <figcaption className="artists-caption">Kraft</figcaption>
                       </a>
                     </figure>
                   </div>
@@ -31,7 +31,7 @@ const ArtistsPage = ({ data }) => (
                   <a href="../izzibizzi">
                     <figure>
                       <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/rasval-artist.jpg" />
-                      <figcaption className="artists-caption">Rasval</figcaption>
+                      <figcaption className="artists-caption">Awenita</figcaption>
 
                     </figure>
                     </a>
@@ -40,7 +40,7 @@ const ArtistsPage = ({ data }) => (
                   <div class="images-column">
                     <figure>
                       <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/tobiashall-artist.jpg" />
-                      <figcaption className="artists-caption">Tobias Hall</figcaption>
+                      <figcaption className="artists-caption">Roods</figcaption>
                       </a>
                     </figure>
                   </div>
