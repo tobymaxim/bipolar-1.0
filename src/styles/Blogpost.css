@@ -51,7 +51,7 @@
 }
 
 .post-date {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   padding-left: 12px;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -80,7 +80,7 @@
 
 .post-tag {
   color: #000000;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 400;
   display: inline-block;
   margin-right: 6px;
@@ -88,7 +88,7 @@
   padding: 2px 6px 2px 6px;
   background: #ffffff;
   border: 1px solid #dddfe2;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .post-tag:hover {

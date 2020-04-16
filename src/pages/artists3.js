@@ -36,7 +36,7 @@ export default ArtistsPage
 
 export const query = graphql`
   query {
-    allWordpressPage(filter: {template: {eq: "tpl-artists.php"}}, sort: {fields: guid}) {
+    allWordpressPage(filter: {template: {eq: "tpl-art.php"}}, sort: {fields: guid}) {
       edges {
         node {
           featured_media {

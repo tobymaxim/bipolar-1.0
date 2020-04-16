@@ -7,13 +7,13 @@ import Sociallinks from "../components/Sociallinks"
 import Nextdates from "../components/Nextdates"
 import Pastdates from "../components/Pastdates"
 
-const IzziBizziPage = ({ data }) => (
+const KraftPage = ({ data }) => (
 
   <Layout>
-    <SEO title="Izzi Bizzi" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Kraft" keywords={[`gatsby`, `application`, `react`]} />
     <div class="main-container">
       <div class="left-container">
-        <div class="blackbox"><h1 class="headline1">Izzi Bizzi</h1></div>
+        <div class="blackbox"><h1 class="headline1">Kraft</h1></div>
         <div class="artist-blog-post">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
@@ -47,33 +47,15 @@ const IzziBizziPage = ({ data }) => (
           )}
           </div>
         </div>
-        <div class="blackbox"><h1 class="headline1">Discography</h1></div>
-        <div class="artist-blog-post">
-          <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
-            <div>
-              <div className="artists-bandcamp-iframe">
-                {post.node.acf && post.node.acf.bandcamp_iframe &&
-                  <div className="bandcamp-iframe-self" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.bandcamp_iframe }} />}
-              </div>
-
-              {post.node.acf && post.node.acf.youtube_iframe &&
-                <div className="artists-youtube-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
-            </div>
-          )}
-          </div>
+        <div class="blackbox"><h1 class="headline1">Projects</h1></div>
+<div class="artist-blog-post">
+<div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+        <div>
+            {post.node.acf.image_3.localFile && post.node.acf.image_3.localFile.url &&
+                <div className="art-projects"><a href={post.node.acf.image_3.localFile.url} target="_blank"><img className="art-imagegallery" src={post.node.acf.image_3.localFile.childImageSharp.resolutions.src} /></a></div>}
         </div>
-        <div class="blackbox"><h1 class="headline1">Music</h1></div>
-        <div class="artist-blog-post">
-          <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
-            <div>
-              <div className="artists-soundcloud-container">
-                {post.node.acf && post.node.acf.soundcloud_iframe &&
-                  <div className="artists-soundcloud-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.soundcloud_iframe }} />}
-              </div>
-            </div>
-          )}
-          </div>
-        </div>
+    )}</div>
+    </div>
       </div>
       <div class="right-container">
         <div>
@@ -105,12 +87,12 @@ const IzziBizziPage = ({ data }) => (
   </Layout>
 )
 
-export default IzziBizziPage
+export default KraftPage
 
 
 export const query = graphql`
   query {
-    allWordpressPage(filter: {template: {eq: "tpl-artists.php"}, title: {eq: "Izzi Bizzi"}}) {
+    allWordpressPage(filter: {template: {eq: "tpl-art.php"}, title: {eq: "Kraft"}}) {
       edges {
         node {
           featured_media {
@@ -158,12 +140,22 @@ export const query = graphql`
                 url
               }
             }
+            image_3 {
+                localFile {
+                  childImageSharp {
+                    resolutions(fit: COVER, width: 1408, height: 1056) {
+                      src
+                    }
+                  }
+                  url
+                }
+              }
           }
           content
         }
       }
     }
-    allTribeEvents(filter: {title: {eq: "Izzi Bizzi"}}) {
+    allTribeEvents(filter: {title: {eq: "Kraft"}}) {
         edges {
           node {
             title

@@ -6,7 +6,6 @@
 }
 
 .artist-imagegallery:hover {
-    margin-top: 6px;
     opacity: 0.85;
 }
 
@@ -15,7 +14,11 @@ margin-bottom: -7px !important;
 }
 
 .imagegallery-ul {
-    margin-bottom: 12px;;
+    margin-bottom: 12px;
+}
+
+.blackbox-imagegallery {
+    background-color: black;
 }
 
 @media screen and (max-width: 576px) {
