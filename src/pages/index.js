@@ -10,7 +10,7 @@ import Instagram from "../components/Instagram"
 import Sociallinks from "../components/Sociallinks"
 
 const IndexPage = ({ data }) => (
-  
+
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div class="main-container">
@@ -25,10 +25,10 @@ const IndexPage = ({ data }) => (
         <Nextdates data={data} />
         <Sociallinks data={data} />
         <div class="blackbox">
-        <h1 class="headline1">Instagram</h1>
+          <h1 class="headline1">Instagram</h1>
         </div>
         <div className="instagram-container"><Instagram data={data} /></div>
-        </div>
+      </div>
     </div>
   </Layout>
 )

@@ -28,13 +28,13 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
 
-        <main>{children}</main>
-        <footer className="footer">
-          <p className="footer-text">© {new Date().getFullYear()} 
+      <main>{children}</main>
+      <footer className="footer">
+        <p className="footer-text">© {new Date().getFullYear()}
           {` `}
           Bipolar.Berlin
           </p>
-        </footer>
+      </footer>
 
     </>
   )

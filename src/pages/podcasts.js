@@ -7,28 +7,28 @@ import Sociallinks from "../components/Sociallinks"
 import Nextdates from "../components/Nextdates"
 
 const LabelPage = ({ data }) => (
-  
-    <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <div class="main-container">
-        <div class="left-container">
-            <div class="blackbox"><h1 class="headline1">Bipølar. Series</h1></div>
-            <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
-                <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
-            )}
-            </div>
-        </div>
-        <div class="right-container">
-            <div class="blackbox">
-              <h1 class="headline1">Next Dates</h1>
-            </div>
-            <Nextdates data={data} />
-            <Sociallinks data={data} />
+
+  <Layout>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <div class="main-container">
+      <div class="left-container">
+        <div class="blackbox"><h1 class="headline1">Bipølar. Series</h1></div>
+        <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+          <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+        )}
         </div>
       </div>
-    </Layout>
-  )
-  
+      <div class="right-container">
+        <div class="blackbox">
+          <h1 class="headline1">Next Dates</h1>
+        </div>
+        <Nextdates data={data} />
+        <Sociallinks data={data} />
+      </div>
+    </div>
+  </Layout>
+)
+
 export default LabelPage
 
 

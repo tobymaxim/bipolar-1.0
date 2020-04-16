@@ -48,14 +48,14 @@ const KraftPage = ({ data }) => (
           </div>
         </div>
         <div class="blackbox"><h1 class="headline1">Projects</h1></div>
-<div class="artist-blog-post">
-<div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
-        <div>
-            {post.node.acf.image_3.localFile && post.node.acf.image_3.localFile.url &&
+        <div class="artist-blog-post">
+          <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+            <div>
+              {post.node.acf.image_3.localFile && post.node.acf.image_3.localFile.url &&
                 <div className="art-projects"><a href={post.node.acf.image_3.localFile.url} target="_blank"><img className="art-imagegallery" src={post.node.acf.image_3.localFile.childImageSharp.resolutions.src} /></a></div>}
+            </div>
+          )}</div>
         </div>
-    )}</div>
-    </div>
       </div>
       <div class="right-container">
         <div>

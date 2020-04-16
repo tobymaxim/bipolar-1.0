@@ -7,30 +7,30 @@ import Sociallinks from "../components/Sociallinks"
 import Nextdates from "../components/Nextdates"
 
 const ArtistsPage = ({ data }) => (
-  
-    <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <div class="main-container">
-        <div class="left-container">
-            <div class="blackbox"><h1 class="headline1">Artists</h1></div>
-            <div class="blog-post">
-            <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
-                <img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
-            )}
-            </div>
-            </div>
-        </div>
-        <div class="right-container">
-            <div class="blackbox">
-              <h1 class="headline1">Next Dates</h1>
-            </div>
-            <Nextdates data={data} />
-            <Sociallinks data={data} />
+
+  <Layout>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <div class="main-container">
+      <div class="left-container">
+        <div class="blackbox"><h1 class="headline1">Artists</h1></div>
+        <div class="blog-post">
+          <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+            <img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
+          )}
+          </div>
         </div>
       </div>
-    </Layout>
-  )
-  
+      <div class="right-container">
+        <div class="blackbox">
+          <h1 class="headline1">Next Dates</h1>
+        </div>
+        <Nextdates data={data} />
+        <Sociallinks data={data} />
+      </div>
+    </div>
+  </Layout>
+)
+
 export default ArtistsPage
 
 
