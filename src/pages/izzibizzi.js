@@ -24,7 +24,7 @@ const IzziBizziPage = ({ data }) => (
                 <div className="artists-container-left">
                     
 
-                      <a href="../izzibizzi"><img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
+                      <a href={post.node.featured_media.localFile.url}><img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
                       </a>
 
                     
@@ -46,7 +46,7 @@ const IzziBizziPage = ({ data }) => (
             </div>
 
 
-            <div class="blackbox"><h1 class="headline1">Releases</h1></div>
+            <div class="blackbox"><h1 class="headline1">Discography</h1></div>
             <div class="artist-blog-post">
             <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
@@ -107,6 +107,7 @@ export const query = graphql`
         node {
           featured_media {
             localFile {
+              url
               childImageSharp {
                 resolutions(height: 530, width: 530) {
                   src

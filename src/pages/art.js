@@ -45,38 +45,6 @@ const ArtistsPage = ({ data }) => (
                     </figure>
                   </div>
 
-                  <div class="images-column">
-                    <figure>
-                      <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/ones-artist.jpg" />
-                      <figcaption className="artists-caption">Ones.</figcaption>
-                      </a>
-                    </figure>
-                  </div>
-
-                  <div class="images-column">
-                    <figure>
-                      <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/glsky-artist.jpg" />
-                      <figcaption className="artists-caption">GLSKY</figcaption>
-                      </a>
-                    </figure>
-                  </div>
-
-                  <div class="images-column">
-                    <figure>
-                      <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/frederick-artist.jpg" />
-                      <figcaption className="artists-caption">Frederick</figcaption>
-                      </a>
-                    </figure>
-                  </div>
-
-                  <div class="images-column">
-                    <figure>
-                      <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/anna-artist.png" />
-                      <figcaption className="artists-caption">Anna Ground</figcaption>
-                      </a>
-                    </figure>
-                  </div>
-
               </div>
             </div>
           </div>
