@@ -28,7 +28,7 @@ const ArtistsPage = ({ data }) => (
               </div>
 
               <div className="images-column">
-                <a href="../izzibizzi">
+                <a href="../rasval">
                   <figure>
                     <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/rasval-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Rasval</figcaption>
@@ -39,7 +39,7 @@ const ArtistsPage = ({ data }) => (
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/tobiashall-artist.jpg" alt="" />
+                  <a href="../tobiashall"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/tobiashall-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Tobias Hall</figcaption>
                   </a>
                 </figure>
@@ -47,7 +47,7 @@ const ArtistsPage = ({ data }) => (
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/ones-artist.jpg" alt="" />
+                  <a href="../ones"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/ones-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Ones.</figcaption>
                   </a>
                 </figure>
@@ -55,7 +55,7 @@ const ArtistsPage = ({ data }) => (
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/glsky-artist.jpg" alt="" />
+                  <a href="../glsky"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/glsky-artist.jpg" alt="" />
                     <figcaption className="artists-caption">GLSKY</figcaption>
                   </a>
                 </figure>
@@ -63,7 +63,7 @@ const ArtistsPage = ({ data }) => (
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/frederick-artist.jpg" alt="" />
+                  <a href="../frederick"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/frederick-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Frederick</figcaption>
                   </a>
                 </figure>
@@ -71,7 +71,7 @@ const ArtistsPage = ({ data }) => (
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/anna-artist.png" alt="" />
+                  <a href="../annaground"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/anna-artist.png" alt="" />
                     <figcaption className="artists-caption">Anna Ground</figcaption>
                   </a>
                 </figure>

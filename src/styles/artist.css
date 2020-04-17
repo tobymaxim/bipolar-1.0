@@ -56,6 +56,16 @@
     width: 100%;
     height: 350px;
     margin-bottom: 6px;
+    display: block;
+}
+
+.artists-youtube-iframe-poetry {
+    margin: 0;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 6px;
+    display: inline-block;
+    margin-bottom: 12px;
 }
 
 .artists-bandcamp-iframe {
@@ -67,10 +77,12 @@
 
 .artists-soundcloud-container {
     margin-bottom: -18px;
+    width: 100%;
 }
 
 .artists-soundcloud-iframe {
     margin-bottom: 6px;
+    width: 100%;
 }
 
 .artists-titles {
