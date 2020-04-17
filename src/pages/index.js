@@ -3,15 +3,13 @@ import { graphql, } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/index.css"
-
-import Blogpost from "../components/Blogpost"
+import Blogpost from "../components/blogpost"
 import Nextdates from "../components/Nextdates"
 import Instagram from "../components/Instagram"
 import Sociallinks from "../components/Sociallinks"
 
 const IndexPage = ({ data }) => (
-
-  <Layout>
+  <Layout data={data}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div class="main-container">
       <div class="left-container">
@@ -32,10 +30,7 @@ const IndexPage = ({ data }) => (
     </div>
   </Layout>
 )
-
 export default IndexPage
-
-
 export const query = graphql`
   query {
     allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Posts"}}}}, sort: {fields: [date], order: DESC}) {
@@ -102,6 +97,19 @@ export const query = graphql`
               resolutions(fit: COVER, cropFocus: CENTER) {
                 src
               }
+            }
+          }
+        }
+      }
+    }
+    allWordpressWpApiMenusMenusItems {
+      edges {
+        node {
+          slug
+          items {
+            title
+            wordpress_children {
+              title
             }
           }
         }

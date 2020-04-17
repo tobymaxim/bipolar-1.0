@@ -28,6 +28,8 @@
 .menu-list {
   text-align: center;
   padding-top: 3px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-link {

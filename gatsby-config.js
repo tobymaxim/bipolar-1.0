@@ -9,7 +9,7 @@ const myCustomQueries = {
 module.exports = {
   siteMetadata: {
     title: `BIPØLAR. Berlin`,
-    description: `Stay up to date with our latest news.`,
+    description: `Art & Techno Collective`,
     author: `@admin`,
   },
   plugins: [
