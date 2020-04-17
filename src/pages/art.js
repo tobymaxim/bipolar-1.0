@@ -10,36 +10,36 @@ const ArtistsPage = ({ data }) => (
 
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div class="main-container">
-      <div class="left-container">
-        <div class="blackbox"><h1 class="headline1">Art</h1></div>
-        <div class="blog-post">
+    <div className="main-container">
+      <div className="left-container">
+        <div className="blackbox"><h1 className="headline1">Art</h1></div>
+        <div className="blog-post">
           <div className="artists-images-container">
 
             <div className="images-row">
 
 
-              <div class="images-column">
+              <div className="images-column">
                 <figure>
-                  <a href="../kraft"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/kraft-art.jpg" />
+                  <a href="../kraft"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/kraft-art.jpg" alt="" />
                     <figcaption className="artists-caption">Kraft</figcaption>
                   </a>
                 </figure>
               </div>
 
-              <div class="images-column">
+              <div className="images-column">
                 <a href="../izzibizzi">
                   <figure>
-                    <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/awenita-art.jpg" />
+                    <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/awenita-art.jpg" alt="" />
                     <figcaption className="artists-caption">Awenita</figcaption>
 
                   </figure>
                 </a>
               </div>
 
-              <div class="images-column">
+              <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/roods-art.jpg" />
+                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/roods-art.jpg" alt="" />
                     <figcaption className="artists-caption">Roods</figcaption>
                   </a>
                 </figure>
@@ -49,9 +49,9 @@ const ArtistsPage = ({ data }) => (
           </div>
         </div>
       </div>
-      <div class="right-container">
-        <div class="blackbox">
-          <h1 class="headline1">Next Dates</h1>
+      <div className="right-container">
+        <div className="blackbox">
+          <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
         <Sociallinks data={data} />

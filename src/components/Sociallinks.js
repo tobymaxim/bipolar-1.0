@@ -3,7 +3,7 @@ import "../styles/index.css"
 
 const Sociallinks = ({ data }) => (
   <div>
-    <div class="blackbox-sociallinks"><h1 class="headline1">Social Links</h1></div>
+    <div className="blackbox-sociallinks"><h1 className="headline1">Social Links</h1></div>
     <div className="sociallinks-container">
       <a className="sociallinks" href="https://bipolarberlin.bandcamp.com/" target="_blank" rel="noopener noreferrer"><div className="bandcamp-icon"></div></a>
       <a className="sociallinks" href="https://www.facebook.com/bipolar.berlin/" target="_blank" rel="noopener noreferrer"><div className="facebook-icon"></div></a>

@@ -11,19 +11,19 @@ import Sociallinks from "../components/Sociallinks"
 const IndexPage = ({ data }) => (
   <Layout data={data}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div class="main-container">
-      <div class="left-container">
-        <div class="blackbox"><h1 class="headline1">News</h1></div>
+    <div className="main-container">
+      <div className="left-container">
+        <div className="blackbox"><h1 className="headline1">News</h1></div>
         <Blogpost data={data} />
       </div>
-      <div class="right-container">
-        <div class="blackbox">
-          <h1 class="headline1">Next Dates</h1>
+      <div className="right-container">
+        <div className="blackbox">
+          <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
         <Sociallinks data={data} />
-        <div class="blackbox">
-          <h1 class="headline1">Instagram</h1>
+        <div className="blackbox">
+          <h1 className="headline1">Instagram</h1>
         </div>
         <div className="instagram-container"><Instagram data={data} /></div>
       </div>
@@ -94,7 +94,7 @@ export const query = graphql`
         node {
           localFile {
             childImageSharp {
-              resolutions(fit: COVER, cropFocus: CENTER) {
+              resolutions(cropFocus: CENTER) {
                 src
               }
             }

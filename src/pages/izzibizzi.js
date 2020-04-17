@@ -11,10 +11,10 @@ const IzziBizziPage = ({ data }) => (
 
   <Layout>
     <SEO title="Izzi Bizzi" keywords={[`gatsby`, `application`, `react`]} />
-    <div class="main-container">
-      <div class="left-container">
-        <div class="blackbox"><h1 class="headline1">Izzi Bizzi</h1></div>
-        <div class="artist-blog-post">
+    <div className="main-container">
+      <div className="left-container">
+        <div className="blackbox"><h1 className="headline1">Izzi Bizzi</h1></div>
+        <div className="artist-blog-post">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
               <div className="artists-container">
@@ -50,8 +50,8 @@ const IzziBizziPage = ({ data }) => (
           )}
           </div>
         </div>
-        <div class="blackbox"><h1 class="headline1">Discography</h1></div>
-        <div class="artist-blog-post">
+        <div className="blackbox"><h1 className="headline1">Discography</h1></div>
+        <div className="artist-blog-post">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
               <div className="artists-bandcamp-iframe">
@@ -65,8 +65,8 @@ const IzziBizziPage = ({ data }) => (
           )}
           </div>
         </div>
-        <div class="blackbox"><h1 class="headline1">Music</h1></div>
-        <div class="artist-blog-post">
+        <div className="blackbox"><h1 className="headline1">Music</h1></div>
+        <div className="artist-blog-post">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
               <div className="artists-soundcloud-container">
@@ -78,28 +78,28 @@ const IzziBizziPage = ({ data }) => (
           </div>
         </div>
       </div>
-      <div class="right-container">
+      <div className="right-container">
         <div>
-          <div class="blackbox-imagegallery">
-            <h1 class="headline1">Presspics</h1>
+          <div className="blackbox-imagegallery">
+            <h1 className="headline1">Presspics</h1>
           </div>
           <ul className="imagegallery-ul" style={{ listStyle: "none" }}>{data.allWordpressPage.edges.map(post =>
             (
               <div>
                 {post.node.acf.image_1.localFile && post.node.acf.image_1.localFile.url &&
-                  <li className="imagegallery-li"><a href={post.node.acf.image_1.localFile.url} target="_blank"><img className="artist-imagegallery" src={post.node.acf.image_1.localFile.childImageSharp.resolutions.src} /></a></li>}
+                  <li className="imagegallery-li"><a href={post.node.acf.image_1.localFile.url} target="_blank" rel="noopener noreferrer"><img className="artist-imagegallery" src={post.node.acf.image_1.localFile.childImageSharp.resolutions.src} alt="" /></a></li>}
                 {post.node.acf.image_2.localFile && post.node.acf.image_2.localFile.url &&
-                  <li className="imagegallery-li"><a href={post.node.acf.image_2.localFile.url} target="_blank"><img className="artist-imagegallery" src={post.node.acf.image_2.localFile.childImageSharp.resolutions.src} /></a></li>}
+                  <li className="imagegallery-li"><a href={post.node.acf.image_2.localFile.url} target="_blank" rel="noopener noreferrer"><img className="artist-imagegallery" src={post.node.acf.image_2.localFile.childImageSharp.resolutions.src} alt="" /></a></li>}
               </div>
             ))}
           </ul>
         </div>
-        <div class="blackbox">
-          <h1 class="headline1">Next Dates</h1>
+        <div className="blackbox">
+          <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
-        <div class="blackbox-pastdates">
-          <h1 class="headline1">Past Dates</h1>
+        <div className="blackbox-pastdates">
+          <h1 className="headline1">Past Dates</h1>
         </div>
         <Pastdates data={data} />
         <Sociallinks data={data} />

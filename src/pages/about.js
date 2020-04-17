@@ -10,10 +10,10 @@ const AboutPage = ({ data }) => (
 
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div class="main-container">
-      <div class="left-container">
-        <div class="blackbox"><h1 class="headline1">About</h1></div>
-        <div class="blog-post-general">
+    <div className="main-container">
+      <div className="left-container">
+        <div className="blackbox"><h1 className="headline1">About</h1></div>
+        <div className="blog-post-general">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
               <img className="about-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
@@ -23,20 +23,20 @@ const AboutPage = ({ data }) => (
           </div>
         </div>
 
-        <div class="blackbox"><h1 class="headline1">Crew</h1></div>
-        <div class="blog-post-general">
+        <div className="blackbox"><h1 className="headline1">Crew</h1></div>
+        <div className="blog-post-general">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
-              <a href={post.node.acf.image_1.localFile.url}><img className="about-images" src={post.node.acf.image_1.localFile.childImageSharp.resolutions.src} /></a>
+              <a href={post.node.acf.image_1.localFile.url}><img className="about-images" src={post.node.acf.image_1.localFile.childImageSharp.resolutions.src} alt="" /></a>
             </div>
           )}
           </div>
         </div>
 
       </div>
-      <div class="right-container">
-        <div class="blackbox">
-          <h1 class="headline1">Next Dates</h1>
+      <div className="right-container">
+        <div className="blackbox">
+          <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
         <Sociallinks data={data} />

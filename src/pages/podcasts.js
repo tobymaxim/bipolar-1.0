@@ -10,17 +10,17 @@ const LabelPage = ({ data }) => (
 
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div class="main-container">
-      <div class="left-container">
-        <div class="blackbox"><h1 class="headline1">Bipølar. Series</h1></div>
+    <div className="main-container">
+      <div className="left-container">
+        <div className="blackbox"><h1 className="headline1">Bipølar. Series</h1></div>
         <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
           <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
         )}
         </div>
       </div>
-      <div class="right-container">
-        <div class="blackbox">
-          <h1 class="headline1">Next Dates</h1>
+      <div className="right-container">
+        <div className="blackbox">
+          <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
         <Sociallinks data={data} />

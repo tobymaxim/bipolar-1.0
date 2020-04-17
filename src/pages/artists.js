@@ -10,68 +10,68 @@ const ArtistsPage = ({ data }) => (
 
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div class="main-container">
-      <div class="left-container">
-        <div class="blackbox"><h1 class="headline1">Artists</h1></div>
-        <div class="blog-post">
+    <div className="main-container">
+      <div className="left-container">
+        <div className="blackbox"><h1 className="headline1">Artists</h1></div>
+        <div className="blog-post">
           <div className="artists-images-container">
 
             <div className="images-row">
 
 
-              <div class="images-column">
+              <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/izzibizzi-artist.jpg" />
+                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/izzibizzi-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Izzi Bizzi</figcaption>
                   </a>
                 </figure>
               </div>
 
-              <div class="images-column">
+              <div className="images-column">
                 <a href="../izzibizzi">
                   <figure>
-                    <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/rasval-artist.jpg" />
+                    <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/rasval-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Rasval</figcaption>
 
                   </figure>
                 </a>
               </div>
 
-              <div class="images-column">
+              <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/tobiashall-artist.jpg" />
+                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/tobiashall-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Tobias Hall</figcaption>
                   </a>
                 </figure>
               </div>
 
-              <div class="images-column">
+              <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/ones-artist.jpg" />
+                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/ones-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Ones.</figcaption>
                   </a>
                 </figure>
               </div>
 
-              <div class="images-column">
+              <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/glsky-artist.jpg" />
+                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/glsky-artist.jpg" alt="" />
                     <figcaption className="artists-caption">GLSKY</figcaption>
                   </a>
                 </figure>
               </div>
 
-              <div class="images-column">
+              <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/frederick-artist.jpg" />
+                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/frederick-artist.jpg" alt="" />
                     <figcaption className="artists-caption">Frederick</figcaption>
                   </a>
                 </figure>
               </div>
 
-              <div class="images-column">
+              <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/anna-artist.png" />
+                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/anna-artist.png" alt="" />
                     <figcaption className="artists-caption">Anna Ground</figcaption>
                   </a>
                 </figure>
@@ -81,9 +81,9 @@ const ArtistsPage = ({ data }) => (
           </div>
         </div>
       </div>
-      <div class="right-container">
-        <div class="blackbox">
-          <h1 class="headline1">Next Dates</h1>
+      <div className="right-container">
+        <div className="blackbox">
+          <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
         <Sociallinks data={data} />

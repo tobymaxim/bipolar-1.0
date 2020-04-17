@@ -10,19 +10,19 @@ const ArtistsPage = ({ data }) => (
 
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div class="main-container">
-      <div class="left-container">
-        <div class="blackbox"><h1 class="headline1">Artists</h1></div>
-        <div class="blog-post">
+    <div className="main-container">
+      <div className="left-container">
+        <div className="blackbox"><h1 className="headline1">Artists</h1></div>
+        <div className="blog-post">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
           )}
           </div>
         </div>
       </div>
-      <div class="right-container">
-        <div class="blackbox">
-          <h1 class="headline1">Next Dates</h1>
+      <div className="right-container">
+        <div className="blackbox">
+          <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
         <Sociallinks data={data} />
