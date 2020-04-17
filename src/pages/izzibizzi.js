@@ -22,28 +22,34 @@ const IzziBizziPage = ({ data }) => (
                   <a href={post.node.featured_media.localFile.url}><img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
                   </a>
                   <div className="artists-sociallinks-container">
-                    <a className="artists-sociallinks" href="https://www.residentadvisor.net/dj/izzibizzi-de/" target="_blank" rel="noopener noreferrer"><div className="residentadvisor-icon"></div></a>
-                    <a className="artists-sociallinks" href="https://www.soundcloud.com/bipolarberlin/" target="_blank" rel="noopener noreferrer"><div className="soundcloud-icon"></div></a>
-                    <a className="artists-sociallinks" href="https://www.facebook.com/bipolar.berlin/" target="_blank" rel="noopener noreferrer"><div className="facebook-icon"></div></a>
-                    <a className="artists-sociallinks" href="https://www.instagram.com/bipolar.berlin/" target="_blank" rel="noopener noreferrer"><div className="instagram-icon"></div></a>
+                    {post.node.acf && post.node.acf.resident_advisor &&
+                      <a className="artists-sociallinks" href={post.node.acf && post.node.acf.resident_advisor} target="_blank" rel="noopener noreferrer"><div className="residentadvisor-icon"></div></a>}
+                    {post.node.acf && post.node.acf.soundcloud &&
+                      <a className="artists-sociallinks" href={post.node.acf && post.node.acf.soundcloud} target="_blank" rel="noopener noreferrer"><div className="soundcloud-icon"></div></a>}
+                    {post.node.acf && post.node.acf.facebook &&
+                      <a className="artists-sociallinks" href={post.node.acf && post.node.acf.facebook} target="_blank" rel="noopener noreferrer"><div className="facebook-icon"></div></a>}
+                    {post.node.acf && post.node.acf.instagram &&
+                      <a className="artists-sociallinks" href={post.node.acf && post.node.acf.instagram} target="_blank" rel="noopener noreferrer"><div className="instagram-icon"></div></a>}
                   </div>
-                  <a className="button-presskit" href="https://drive.google.com/open?id=1Xb9WTVpZ36BjvlJ4vxldsH0wVuz3FEbi" target="_blank" rel="noopener noreferrer"><div className="button-general">Download Presskit</div></a>
+                  {post.node.acf && post.node.acf.presskit &&
+                    <a className="button-presskit" href={post.node.acf && post.node.acf.presskit} target="_blank" rel="noopener noreferrer"><div className="button-general">Download Presskit</div></a>}
                   {post.node.acf && post.node.acf.credits &&
                     <div className="artist-credits" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
                 </div>
                 <div className="artists-container-right">
                   <div className="artists-post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
-
                   <div className="artist-tag-container">
-                    <div className="post-tag">#{post.node.acf.tag_1}</div>
-                    <div className="post-tag">#{post.node.acf.tag_2}</div>
-                    <div className="post-tag">#{post.node.acf.tag_3}</div>
-                    <div className="post-tag">#{post.node.acf.tag_4}</div>
+                    {post.node.acf && post.node.acf.tag_1 &&
+                      <div className="post-tag">#{post.node.acf.tag_1}</div>}
+                    {post.node.acf && post.node.acf.tag_2 &&
+                      <div className="post-tag">#{post.node.acf.tag_2}</div>}
+                    {post.node.acf && post.node.acf.tag_3 &&
+                      <div className="post-tag">#{post.node.acf.tag_3}</div>}
+                    {post.node.acf && post.node.acf.tag_4 &&
+                      <div className="post-tag">#{post.node.acf.tag_4}</div>}
                   </div>
                   {post.node.acf && post.node.acf.credits &&
                     <div className="artist-credits-mobile" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
-
-
                 </div>
               </div>
             </div>

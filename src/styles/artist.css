@@ -131,8 +131,13 @@
     height: 50px;
     margin-right: 12px;
     width: 100%;
-    display: inline-block;
+    display: block;
   }
+
+.button-presskit:hover {
+    background-color: #000000;
+    border-color: none;
+}
 
 .button-general {
     margin-top: 12px;
