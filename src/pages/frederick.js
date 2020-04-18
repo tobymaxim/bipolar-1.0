@@ -62,8 +62,8 @@ const FrederickPage = ({ data }) => (
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
               <div>
-              {post.node.acf && post.node.acf.youtube_iframe &&
-                <div className="artists-youtube-iframe-poetry" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
+                {post.node.acf && post.node.acf.youtube_iframe &&
+                  <div className="artists-youtube-iframe-poetry" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.youtube_iframe }} />}
               </div>
             </div>
           )}
@@ -82,6 +82,8 @@ const FrederickPage = ({ data }) => (
                   <li className="imagegallery-li"><a href={post.node.acf.image_1.localFile.url} target="_blank" rel="noopener noreferrer"><img className="artist-imagegallery" src={post.node.acf.image_1.localFile.childImageSharp.resolutions.src} alt="" /></a></li>}
                 {post.node.acf.image_2.localFile && post.node.acf.image_2.localFile.url &&
                   <li className="imagegallery-li"><a href={post.node.acf.image_2.localFile.url} target="_blank" rel="noopener noreferrer"><img className="artist-imagegallery" src={post.node.acf.image_2.localFile.childImageSharp.resolutions.src} alt="" /></a></li>}
+                {post.node.acf.image_3.localFile && post.node.acf.image_3.localFile.url &&
+                  <li className="imagegallery-li"><a href={post.node.acf.image_3.localFile.url} target="_blank" rel="noopener noreferrer"><img className="artist-imagegallery" src={post.node.acf.image_3.localFile.childImageSharp.resolutions.src} alt="" /></a></li>}
               </div>
             ))}
           </ul>
@@ -144,6 +146,16 @@ export const query = graphql`
               }
             }
             image_2 {
+              localFile {
+                childImageSharp {
+                  resolutions(fit: COVER) {
+                    src
+                  }
+                }
+                url
+              }
+            }
+            image_3 {
               localFile {
                 childImageSharp {
                   resolutions(fit: COVER) {

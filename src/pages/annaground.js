@@ -71,21 +71,6 @@ const AnnagroundPage = ({ data }) => (
         </div>
       </div>
       <div className="right-container">
-        <div>
-          <div className="blackbox-imagegallery">
-            <h1 className="headline1">Presspics</h1>
-          </div>
-          <ul className="imagegallery-ul" style={{ listStyle: "none" }}>{data.allWordpressPage.edges.map(post =>
-            (
-              <div>
-                {post.node.acf.image_1.localFile && post.node.acf.image_1.localFile.url &&
-                  <li className="imagegallery-li"><a href={post.node.acf.image_1.localFile.url} target="_blank" rel="noopener noreferrer"><img className="artist-imagegallery" src={post.node.acf.image_1.localFile.childImageSharp.resolutions.src} alt="" /></a></li>}
-                {post.node.acf.image_2.localFile && post.node.acf.image_2.localFile.url &&
-                  <li className="imagegallery-li"><a href={post.node.acf.image_2.localFile.url} target="_blank" rel="noopener noreferrer"><img className="artist-imagegallery" src={post.node.acf.image_2.localFile.childImageSharp.resolutions.src} alt="" /></a></li>}
-              </div>
-            ))}
-          </ul>
-        </div>
         <div className="blackbox">
           <h1 className="headline1">Next Dates</h1>
         </div>
@@ -105,7 +90,7 @@ export default AnnagroundPage
 
 export const query = graphql`
   query {
-    allWordpressPage(filter: {template: {eq: "tpl-artists.php"}, title: {eq: "Anna Ground"}}) {
+    allWordpressPage(filter: {template: {eq: "tpl-artists.php"}, title: {eq: "AnnaGround"}}) {
       edges {
         node {
           featured_media {
@@ -133,26 +118,6 @@ export const query = graphql`
             bandcamp_iframe
             youtube_iframe
             soundcloud_iframe
-            image_1 {
-              localFile {
-                childImageSharp {
-                  resolutions(fit: COVER) {
-                    src
-                  }
-                }
-                url
-              }
-            }
-            image_2 {
-              localFile {
-                childImageSharp {
-                  resolutions(fit: COVER) {
-                    src
-                  }
-                }
-                url
-              }
-            }
           }
           content
         }
