@@ -21,6 +21,10 @@ margin-bottom: -7px !important;
     background-color: black;
 }
 
+.headline1-artist {
+    display: none;
+}
+
 @media screen and (max-width: 576px) {
 
 .artist-imagegallery {
