@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import "../styles/index.css"
 import Sociallinks from "../components/Sociallinks"
 import Nextdates from "../components/Nextdates"
-import "./iframe"
 
 
 const BookingPage = ({ data }) => (
