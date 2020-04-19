@@ -10,7 +10,7 @@ html {
   flex-wrap: wrap;
   width: 100%;
   padding-top: 250px;
-  max-width: 1280px;
+  max-width: 1200px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
@@ -19,7 +19,7 @@ html {
   flex: 3;
 }
 .right-container {
-  flex-basis: 21%;
+  flex-basis: 24%;
   padding-left: 18px;
 }
 .blackbox {
