@@ -7,13 +7,13 @@ import Sociallinks from "../components/Sociallinks"
 import Nextdates from "../components/Nextdates"
 import Pastdates from "../components/Pastdates"
 
-const KraftPage = ({ data }) => (
+const RoodsPage = ({ data }) => (
 
   <Layout>
-    <SEO title="Kraft" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Roods" keywords={[`gatsby`, `application`, `react`]} />
     <div className="main-container">
       <div className="left-container">
-        <div className="blackbox"><h1 className="headline1">Kraft</h1></div>
+        <div className="blackbox"><h1 className="headline1">Roods</h1></div>
         <div className="artist-blog-post">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
@@ -98,12 +98,12 @@ const KraftPage = ({ data }) => (
   </Layout>
 )
 
-export default KraftPage
+export default RoodsPage
 
 
 export const query = graphql`
   query {
-    allWordpressPage(filter: {template: {eq: "tpl-art.php"}, title: {eq: "Kraft"}}) {
+    allWordpressPage(filter: {template: {eq: "tpl-art.php"}, title: {eq: "Roods"}}) {
       edges {
         node {
           featured_media {
@@ -176,7 +176,7 @@ export const query = graphql`
         }
       }
     }
-    allTribeEvents(filter: {title: {eq: "Kraft"}}) {
+    allTribeEvents(filter: {title: {eq: "Roods"}}) {
       edges {
         node {
           title

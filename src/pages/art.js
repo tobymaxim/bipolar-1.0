@@ -15,10 +15,7 @@ const ArtistsPage = ({ data }) => (
         <div className="blackbox"><h1 className="headline1">Art</h1></div>
         <div className="blog-post">
           <div className="artists-images-container">
-
             <div className="images-row">
-
-
               <div className="images-column">
                 <figure>
                   <a href="../kraft"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/kraft-art.jpg" alt="" />
@@ -26,25 +23,21 @@ const ArtistsPage = ({ data }) => (
                   </a>
                 </figure>
               </div>
-
               <div className="images-column">
-                <a href="../izzibizzi">
+                <a href="../awenita">
                   <figure>
                     <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/awenita-art.jpg" alt="" />
                     <figcaption className="artists-caption">Awenita</figcaption>
-
                   </figure>
                 </a>
               </div>
-
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/roods-art.jpg" alt="" />
+                  <a href="../roods"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/roods-art.jpg" alt="" />
                     <figcaption className="artists-caption">Roods</figcaption>
                   </a>
                 </figure>
               </div>
-
             </div>
           </div>
         </div>

@@ -7,13 +7,13 @@ import Sociallinks from "../components/Sociallinks"
 import Nextdates from "../components/Nextdates"
 import Pastdates from "../components/Pastdates"
 
-const KraftPage = ({ data }) => (
+const AwenitaPage = ({ data }) => (
 
   <Layout>
-    <SEO title="Kraft" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Awenita" keywords={[`gatsby`, `application`, `react`]} />
     <div className="main-container">
       <div className="left-container">
-        <div className="blackbox"><h1 className="headline1">Kraft</h1></div>
+        <div className="blackbox"><h1 className="headline1">Awenita</h1></div>
         <div className="artist-blog-post">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
@@ -51,6 +51,18 @@ const KraftPage = ({ data }) => (
                   {post.node.acf && post.node.acf.credits &&
                     <div className="artist-credits-mobile" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.credits }} />}
                 </div>
+              </div>
+            </div>
+          )}
+          </div>
+        </div>
+        <div className="blackbox"><h1 className="headline1">Music</h1></div>
+        <div className="artist-blog-post">
+          <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+            <div>
+              <div className="artists-soundcloud-container">
+                {post.node.acf && post.node.acf.soundcloud_iframe &&
+                  <div className="artists-soundcloud-iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.soundcloud_iframe }} />}
               </div>
             </div>
           )}
@@ -98,12 +110,12 @@ const KraftPage = ({ data }) => (
   </Layout>
 )
 
-export default KraftPage
+export default AwenitaPage
 
 
 export const query = graphql`
   query {
-    allWordpressPage(filter: {template: {eq: "tpl-art.php"}, title: {eq: "Kraft"}}) {
+    allWordpressPage(filter: {template: {eq: "tpl-art.php"}, title: {eq: "Awenita"}}) {
       edges {
         node {
           featured_media {
@@ -176,7 +188,7 @@ export const query = graphql`
         }
       }
     }
-    allTribeEvents(filter: {title: {eq: "Kraft"}}) {
+    allTribeEvents(filter: {title: {eq: "Awenita"}}) {
       edges {
         node {
           title
