@@ -21,17 +21,17 @@ const EventsPage = ({ data }) => (
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/izzibizzi-artist.jpg" alt="" />
-                    <figcaption className="artists-caption">Lost Festival 2019</figcaption>
+                  <a href="../warehouserave"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/events-warehouserave-nye.jpg" alt="" />
+                    <figcaption className="artists-caption">NYE Warehouse Rave</figcaption>
                   </a>
                 </figure>
               </div>
 
               <div className="images-column">
-                <a href="../izzibizzi">
+                <a href="../alienritual-theheritage">
                   <figure>
-                    <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/rasval-artist.jpg" alt="" />
-                    <figcaption className="artists-caption">Rasval</figcaption>
+                    <img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/events-alienritual-theheritage.jpg" alt="" />
+                    <figcaption className="artists-caption">Alien Ritual - The Heritage</figcaption>
 
                   </figure>
                 </a>
@@ -39,32 +39,32 @@ const EventsPage = ({ data }) => (
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/tobiashall-artist.jpg" alt="" />
-                    <figcaption className="artists-caption">Tobias Hall</figcaption>
+                  <a href="../alienritual-the2ndrise"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/events-alienritual-the2ndrise.png" alt="" />
+                    <figcaption className="artists-caption">Alien Ritual - The 2nd Rise</figcaption>
                   </a>
                 </figure>
               </div>
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/ones-artist.jpg" alt="" />
-                    <figcaption className="artists-caption">Ones.</figcaption>
+                  <a href="../feelfestival2018"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/events-feelfestival2018.png" alt="" />
+                    <figcaption className="artists-caption">Feel Festival</figcaption>
                   </a>
                 </figure>
               </div>
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/glsky-artist.jpg" alt="" />
-                    <figcaption className="artists-caption">GLSKY</figcaption>
+                  <a href="../fuscvernissage"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/events-fusc.png" alt="" />
+                    <figcaption className="artists-caption">FUSC Vernissage</figcaption>
                   </a>
                 </figure>
               </div>
 
               <div className="images-column">
                 <figure>
-                  <a href="../izzibizzi"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/frederick-artist.jpg" alt="" />
-                    <figcaption className="artists-caption">Frederick</figcaption>
+                  <a href="../lostfestival2018"><img className="artists-images" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/events-lost48hfestival.png" alt="" />
+                    <figcaption className="artists-caption">Lost 48H Festival</figcaption>
                   </a>
                 </figure>
               </div>
