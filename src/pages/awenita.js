@@ -56,7 +56,7 @@ const AwenitaPage = ({ data }) => (
           )}
           </div>
         </div>
-        <div className="blackbox"><h1 className="headline1">Music</h1></div>
+        <div className="blackbox"><h1 className="headline1">Meditations</h1></div>
         <div className="artist-blog-post">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
