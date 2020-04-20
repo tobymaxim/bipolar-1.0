@@ -30,6 +30,8 @@ const FrederickPage = ({ data }) => (
                       <a className="artists-sociallinks" href={post.node.acf && post.node.acf.facebook} target="_blank" rel="noopener noreferrer"><div className="facebook-icon"></div></a>}
                     {post.node.acf && post.node.acf.instagram &&
                       <a className="artists-sociallinks" href={post.node.acf && post.node.acf.instagram} target="_blank" rel="noopener noreferrer"><div className="instagram-icon"></div></a>}
+                    {post.node.acf && post.node.acf.tumblr &&
+                      <a className="artists-sociallinks" href={post.node.acf && post.node.acf.tumblr} target="_blank" rel="noopener noreferrer"><div className="tumblr-icon"></div></a>}
                   </div>
                   {post.node.acf && post.node.acf.presskit &&
                     <a className="button-presskit" href={post.node.acf && post.node.acf.presskit} target="_blank" rel="noopener noreferrer"><div className="button-general">Download Presskit</div></a>}
@@ -92,10 +94,6 @@ const FrederickPage = ({ data }) => (
           <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
-        <div className="blackbox-pastdates">
-          <h1 className="headline1">Past Dates</h1>
-        </div>
-        <Pastdates data={data} />
         <Sociallinks data={data} />
       </div>
     </div>
@@ -130,6 +128,7 @@ export const query = graphql`
             soundcloud
             facebook
             instagram
+            tumblr
             booking
             presskit
             bandcamp_iframe

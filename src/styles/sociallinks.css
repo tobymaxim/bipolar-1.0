@@ -113,6 +113,21 @@
   border: 0px;
   background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-link-hover.svg')
   }
+.tumblr-icon {
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  border: 0px;
+  border: 2px solid;
+  border-color: #000000;
+  background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-tumblr.svg')
+  }
+.tumblr-icon:hover {
+  height: 50px;
+  width: 50px;
+  border: 0px;
+  background-image: url('http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/icn-tumblr-hover.svg')
+  }
 .mail-icon {
   background-position: center;
   height: 50px;

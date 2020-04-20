@@ -104,10 +104,6 @@ const OnesPage = ({ data }) => (
           <h1 className="headline1">Next Dates</h1>
         </div>
         <Nextdates data={data} />
-        <div className="blackbox-pastdates">
-          <h1 className="headline1">Past Dates</h1>
-        </div>
-        <Pastdates data={data} />
         <Sociallinks data={data} />
       </div>
     </div>
