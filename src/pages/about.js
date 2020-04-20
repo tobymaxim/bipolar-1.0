@@ -58,7 +58,7 @@ export const query = graphql`
               localFile {
                 url
                 childImageSharp {
-                  resolutions(width: 710, height: 330) {
+                  resolutions(width: 1420, height: 660) {
                     src
                   }
                 }

@@ -12,8 +12,22 @@ const Blogpost = ({ data }) => (
           <h2 className="post-title">{post.node.title}</h2>
           <hr className="post-hr" />
           <div className="content-container">
-            <a href={post.node.featured_media.localFile.url}><img className="blog-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} /></a>
-            <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+
+
+
+
+
+            <div className="blogpost-row">
+              <div className="blogpost-column-1">
+                <a href={post.node.featured_media.localFile.url}><img className="blog-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} /></a>
+              </div>
+              <div className="blogpost-column-2">
+                <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+              </div>
+            </div>
+
+
+
             <div className="soundcloud-container">
               {post.node.acf && post.node.acf.soundcloud_iframe &&
                 <div className="soundcloud_iframe" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.soundcloud_iframe }} />}
