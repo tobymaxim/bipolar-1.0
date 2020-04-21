@@ -79,7 +79,7 @@
   text-transform: uppercase;
   margin-top: -2px;
   padding-bottom: 2px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: #000000;
 
 }
@@ -93,6 +93,7 @@
   font-weight: 600;
   margin: 0;
   margin-top: 12px;
+  letter-spacing: 0.5px;
 }
 
 .post-credits {
@@ -109,15 +110,16 @@
 
 .post-tag {
   color: #000000;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   display: inline-block;
   margin-right: 6px;
-  line-height: 1rem;
+  line-height: 1.2rem;
   padding: 2px 6px 2px 6px;
   background: #ffffff;
   border: 1px solid #dddfe2;
   margin-bottom: 4px;
+  letter-spacing: 0.5px;
 }
 
 .post-tag:hover {
