@@ -151,6 +151,7 @@
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 18px;
+  padding-left: 12px;
   padding-top: 18px;
   justify-content: left;
   align-items: center;
@@ -162,6 +163,11 @@
   margin-top: -12px;
   background-color: black;
   display: block;
+}
+
+.sociallinks {
+  margin-right: 12px;
+  margin-top: -6px;
 }
 
 }

@@ -205,6 +205,7 @@
     display: inline-block;
     line-height: 1.35rem;
     margin-bottom: 6px;
+    margin-left: -6px;
 }
 
 .artists-container {
@@ -225,8 +226,10 @@
 }
 
 .artists-about-text {
-    margin-top: 18px;
+    margin-top: 12px;
     margin-bottom: 6px;
+    margin-right: 6px;
+    margin-left: -6px;
 }
 
 .artist-about-container {
@@ -243,6 +246,7 @@
 
 .artist-tag-container {
     margin-bottom: 4px;
+    margin-left: -6px;
 }
 
 .artists-post-content {

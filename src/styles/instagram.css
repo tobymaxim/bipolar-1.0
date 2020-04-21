@@ -26,5 +26,9 @@
       }
 .instagram-container {
   box-shadow: none;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-right: 12px;
 }
+
     }
