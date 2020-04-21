@@ -7,7 +7,7 @@ const Header = ({ children, data }) => {
     <div className="header-container">
       <header className="header">
       <Navbar data={data} />
-        <video loop="1" width="100%" controls="" autoPlay autoplay="1" name="media" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/BipolarJS-Video.mp4" type="video/mp4" ></video>
+        <video loop="1" width="100%" controls="" autoPlay autoplay="1" name="media" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/BipolarJS.mp4" type="video/mp4" ></video>
         
       </header>
       <header className="header-mobile">
