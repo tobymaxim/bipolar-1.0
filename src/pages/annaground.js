@@ -8,7 +8,7 @@ import Nextdates from "../components/Nextdates"
 
 const AnnagroundPage = ({ data }) => (
 
-  <Layout>
+  <Layout data={data}>
     <SEO title="Anna Ground" keywords={[`gatsby`, `application`, `react`]} />
     <div className="main-container">
       <div className="left-container">
@@ -136,5 +136,18 @@ export const query = graphql`
           }
         }
       }
+    allWordpressWpApiMenusMenusItems {
+      edges {
+        node {
+          slug
+          items {
+            title
+            wordpress_children {
+              title
+            }
+          }
+        }
+      }
+    }
   }    
 `

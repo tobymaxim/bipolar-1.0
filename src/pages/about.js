@@ -8,7 +8,7 @@ import Nextdates from "../components/Nextdates"
 
 const AboutPage = ({ data }) => (
 
-  <Layout>
+  <Layout data={data}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="main-container">
       <div className="left-container">
@@ -16,6 +16,9 @@ const AboutPage = ({ data }) => (
         <div className="blog-post-general">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
+
+
+
               <img className="about-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
               <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
             </div>
@@ -93,6 +96,19 @@ export const query = graphql`
             country
           }
           start_date(formatString: "D. MMMM YYYY")
+        }
+      }
+    }
+    allWordpressWpApiMenusMenusItems {
+      edges {
+        node {
+          slug
+          items {
+            title
+            wordpress_children {
+              title
+            }
+          }
         }
       }
     }

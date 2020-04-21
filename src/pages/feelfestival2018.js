@@ -8,7 +8,7 @@ import Nextdates from "../components/Nextdates"
 
 const EventlostPage = ({ data }) => (
 
-  <Layout>
+  <Layout data={data}>
     <SEO title="Lost 48h Art Festival" keywords={[`gatsby`, `application`, `react`]} />
     <div className="main-container">
       <div className="left-container">
@@ -230,5 +230,18 @@ export const query = graphql`
           }
         }
       }
+    allWordpressWpApiMenusMenusItems {
+      edges {
+        node {
+          slug
+          items {
+            title
+            wordpress_children {
+              title
+            }
+          }
+        }
+      }
+    }
   }    
 `

@@ -12,7 +12,7 @@ const Header = ({ children, data }) => {
       </header>
       <header className="header-mobile">
         <div className="header-mobile-container">
-          <div className="header-mobile-column-left">asd</div>
+          <div className="header-mobile-column-left"></div>
           <div className="header-mobile-column-middle"><img className="header-mobile-logo" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/bipolar_logo.svg" alt=""></img></div>
           <div className="header-mobile-column-right"><DrawerToggleButton /></div>
         </div>

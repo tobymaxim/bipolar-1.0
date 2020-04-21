@@ -8,7 +8,7 @@ import Nextdates from "../components/Nextdates"
 
 const LabelPage = ({ data }) => (
 
-  <Layout>
+  <Layout data={data}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="main-container">
       <div className="left-container">
@@ -77,6 +77,19 @@ export const query = graphql`
             country
           }
           start_date(formatString: "D. MMMM YYYY")
+        }
+      }
+    }
+    allWordpressWpApiMenusMenusItems {
+      edges {
+        node {
+          slug
+          items {
+            title
+            wordpress_children {
+              title
+            }
+          }
         }
       }
     }

@@ -8,7 +8,7 @@ import Nextdates from "../components/Nextdates"
 
 const EventsPage = ({ data }) => (
 
-  <Layout>
+  <Layout data={data}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="main-container">
       <div className="left-container">
@@ -131,6 +131,19 @@ export const query = graphql`
               resolutions(height: 580, width: 580, fit: COVER, cropFocus: CENTER) {
                 src
               }
+            }
+          }
+        }
+      }
+    }
+    allWordpressWpApiMenusMenusItems {
+      edges {
+        node {
+          slug
+          items {
+            title
+            wordpress_children {
+              title
             }
           }
         }
