@@ -16,9 +16,10 @@
 }
 
 .blogpost-column-2 {
-  padding-left: 12px;
+  padding-left: 18px;
   float: left;
   width: 68%;
+  padding-right: 6px;
 }
 
 .blog-images {

@@ -17,7 +17,9 @@
   display: table;
   position: static;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5)
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .menu-list {
@@ -43,6 +45,10 @@
 
 .menu-link:hover {
   font-weight: 700;
+  text-decoration: underline;
+}
+
+.menu-link:active {
   text-decoration: underline;
 }
 

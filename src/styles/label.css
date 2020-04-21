@@ -61,6 +61,8 @@
 .label-text {
     margin-top: 6px;
     margin-bottom: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 .bandcamp-iframe {
@@ -81,10 +83,12 @@
 }
 
 .video-credits-text {
-    margin-top: 6px;
+    margin-top: 12px;
     font-size: 0.75rem;
     line-height: 1rem;
     margin-bottom: 6px;
+    margin-right: 6px;
+    margin-left: 6px;
 }
 
 @media screen and (max-width: 576px) {
