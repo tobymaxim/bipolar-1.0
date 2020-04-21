@@ -1,6 +1,6 @@
 .dates-date {
   font-size: 0.85rem;
-  padding-left: 9px;
+  padding-left: 12px;
   padding-bottom: 6px;
   padding-top: 8px;
   color: #fff;
@@ -39,5 +39,7 @@
 }
 .dates-date {
     font-size: 0.85rem;
+    line-height: 1.2;
+    padding-bottom: 7px;
 }
 }
