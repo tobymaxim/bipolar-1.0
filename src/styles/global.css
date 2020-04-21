@@ -9,8 +9,8 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 274px;
-  max-width: 1280px;
+  padding-top: 254px;
+  max-width: 1124px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
@@ -20,19 +20,23 @@ html {
 }
 .right-container {
   flex-basis: 25%;
-  padding-left: 24px;
+  padding-left: 18px;
 }
 .blackbox {
   background-color: black;
 }
 .headline1 {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 12px;
   padding-top: 9px;
   padding-bottom: 9px;
   margin-bottom: 0px;
-  height: 40px;
+  height: 50px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .headline-dates {
   color: #ffffff;

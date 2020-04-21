@@ -46,7 +46,7 @@
 
 .post-li {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .blog-post {
@@ -72,21 +72,25 @@
 
 .post-title {
   width: 100%;
-  font-size: 1.125rem;
+  font-size: 1.3rem;
   margin: 0;
-  line-height: 1.125;
-  font-weight: 730;
+  line-height: 1.2;
+  font-weight: 700;
   text-transform: uppercase;
-  margin-top: -3px;
+  margin-top: -2px;
+  padding-bottom: 2px;
+  letter-spacing: 0.5px;
+  color: #000000;
+
 }
 
 .post-date {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   padding-left: 12px;
   padding-bottom: 6px;
-  padding-top: 6px;
+  padding-top: 8px;
   color: #fff;
-  font-weight: 550;
+  font-weight: 600;
   margin: 0;
   margin-top: 12px;
 }

@@ -21,7 +21,7 @@ const LabelPage = ({ data }) => (
                 {post.node.acf && post.node.acf.bandcamp_iframe &&
                   <div className="bandcamp-iframe-self" dangerouslySetInnerHTML={{ __html: post.node.acf && post.node.acf.bandcamp_iframe }} />}
               </div>
-              <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+              <div className="label-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
 
             </div>
           )}

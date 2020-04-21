@@ -38,6 +38,12 @@
 
 /*BPLR Pages*/
 
+.label-content {
+    text-align: justify;
+    margin-top: 0px;
+    width: 100%;
+}
+
 .label-image {
     width: 275px;
     height: 275px;
@@ -53,7 +59,7 @@
 }
 
 .label-text {
-    margin-top: 0px;
+    margin-top: 6px;
     margin-bottom: 6px;
 }
 

@@ -3,7 +3,7 @@
 }
 
 .artists-container-left {
-    width: 220px;
+    width: 236px;
     margin-right: 12px;
 }
 
@@ -33,7 +33,7 @@
 .artists-sociallinks-container {
 
     align-items: center;
-    width: 220px;
+    width: 236px;
     background-color: #ffffff;
     display: flex;
 }
@@ -42,7 +42,7 @@
     margin-top: 6px;
     float: left;
     height: 50px;
-    margin-right: 6.8px;
+    margin-right: 12px;
     display: flex;
 }
 
@@ -171,7 +171,7 @@
 }
 
 
-
+ 
 /* ART */
 
 .art-projects {

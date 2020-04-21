@@ -13,7 +13,7 @@ const LabelPage = ({ data }) => (
     <div className="main-container">
       <div className="left-container">
         <div className="blackbox"><h1 className="headline1">Bipølar. Series</h1></div>
-        <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
+        <div className="podcasts-container">{data.allWordpressPage.edges.map(post =>
           <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
         )}
         </div>

@@ -8,14 +8,14 @@
 .sociallinks {
     float: left;
     height: 50px;
-    margin-right: 12px;
+    margin-right: 18px;
   }
 .sociallinks:last-child {
   margin-right: 0px;
   }
 .sociallinks-container {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   display: flex;
   align-items: left;
   width: 100%;
@@ -150,8 +150,8 @@
 
   margin-bottom: 0px;
   margin-top: 0px;
-  padding: 12px;
-  padding-top: 12px;
+  padding: 18px;
+  padding-top: 18px;
   justify-content: left;
   align-items: center;
   width: 100%;

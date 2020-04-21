@@ -1,15 +1,15 @@
 .dates-date {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   padding-left: 9px;
   padding-bottom: 6px;
-  padding-top: 6px;
+  padding-top: 8px;
   color: #fff;
   font-weight: 550;
   margin: 0;
 }
 
 .dates-content {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0;
   padding-top: 6px;
   line-height: 1.25;
