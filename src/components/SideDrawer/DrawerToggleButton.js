@@ -1,8 +1,12 @@
 import React from 'react';
 
+import './DrawerToggleButton.css';
+
 const drawerToggleButton = props => (
-    <button className="menu-button">
-        <img className="menu-icon" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/menu-icon-0.svg" alt="" />
+    <button className="toggle-button" onClick={props.click}>
+        <div className="toggle-button__line" />
+        <div className="toggle-button__line" />
+        <div className="toggle-button__line" />
     </button>
 );
 
