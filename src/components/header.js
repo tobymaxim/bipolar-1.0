@@ -6,9 +6,8 @@ const Header = ({ children, data }) => {
   return (
     <div className="header-container">
       <header className="header">
-      <Navbar data={data} />
-        <video loop="1" width="100%" controls="" autoPlay autoplay="1" name="media" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/BipolarJS.mp4" type="video/mp4" ></video>
-        
+        <Navbar data={data} />
+        <div className="header-video-container"><video loop="1" width="100%" height="250" controls="" autoPlay autoplay="1" name="media" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/Sequenz-03_5.mp4" type="video/mp4" ></video></div>
       </header>
       <header className="header-mobile">
         <div className="header-mobile-container">
