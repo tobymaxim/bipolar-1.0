@@ -16,17 +16,13 @@ const AboutPage = ({ data }) => (
         <div className="blog-post-general">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
-
-
-
-              <img className="about-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
+              <a href={post.node.featured_media.localFile.url}><img className="about-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} /></a>
               <h2 className="post-title">Bipølar.</h2>
               <div className="about-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
             </div>
           )}
           </div>
         </div>
-
         <div className="blackbox"><h1 className="headline1">Crew</h1></div>
         <div className="blog-post-general">
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
@@ -71,8 +67,9 @@ export const query = graphql`
           }
           featured_media {
             localFile {
+              url
               childImageSharp {
-                resolutions(height: 566, width: 440) {
+                resolutions(height: 580, width: 580) {
                   src
                 }
               }

@@ -5,10 +5,11 @@
 }
 
 .about-image {
-    width: 180px;
+    width: 236px;
+    height: 236px;
     float: left;
     margin-right: 12px;
-    padding-top: 3px;   
+    margin-top: 6px;
 }
 
 .about-content {
