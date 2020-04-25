@@ -17,7 +17,7 @@ const AboutPage = ({ data }) => (
           <div className="artists-images-container">{data.allWordpressPage.edges.map(post =>
             <div>
               <a href={post.node.featured_media.localFile.url}><img className="about-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} /></a>
-              <h2 className="post-title">Bipølar.</h2>
+              <h2 className="about-title">Bipølar.</h2>
               <div className="about-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
             </div>
           )}

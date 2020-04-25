@@ -206,7 +206,7 @@
     display: inline-block;
     line-height: 1.35rem;
     margin-bottom: 6px;
-    margin-left: -6px;
+    margin-left: 0px;
 }
 
 .artists-container {
@@ -252,6 +252,15 @@
 
 .artists-post-content {
     margin-top: -6px;
+}
+
+.artists-soundcloud-iframe {
+    margin-bottom: 0px;
+}
+
+
+.artists-soundcloud-iframe:last-child {
+    margin-bottom: 4px;
 }
 
 /* ART */

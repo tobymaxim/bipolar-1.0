@@ -22,10 +22,12 @@ const IndexPage = ({ data }) => (
         </div>
         <Nextdates data={data} />
         <Sociallinks data={data} />
-        <div className="blackbox">
-          <h1 className="headline1">Instagram</h1>
+        <div className="instagram-main-container">
+          <div className="blackbox">
+            <h1 className="headline1">Instagram</h1>
+          </div>
+          <div className="instagram-container"><Instagram data={data} /></div>
         </div>
-        <div className="instagram-container"><Instagram data={data} /></div>
       </div>
     </div>
   </Layout>

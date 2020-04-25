@@ -209,6 +209,10 @@
 
 @media screen and (max-width: 576px) {
 
+.blog-post-general {
+  margin-bottom: 12px;
+}
+
 .content-container {
   margin-top: -6px !important;
 }

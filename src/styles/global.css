@@ -49,13 +49,9 @@ html {
 
 @media screen and (max-width: 576px) {
 
-.header {
-  display: none;
-}
-
 .main-container {
   padding: 0;
-  padding-top: 75px;
+  padding-top: 61px;
   background-color: rgba(233, 235, 238)
 }
 

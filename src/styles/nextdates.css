@@ -125,11 +125,17 @@
 }
 
 @media screen and (max-width: 576px) {
+  
   .dates-row {
     padding-top: 9px;
     padding-bottom: 12px;
   }
+  
   .dates-column-1 {
-    width: 14%;
+    width: 57px;
+  }
+  
+  .dates-content-container {
+    margin-top: 2px;
   }
 }

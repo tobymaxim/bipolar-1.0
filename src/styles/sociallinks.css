@@ -8,13 +8,13 @@
 .sociallinks {
     float: left;
     height: 50px;
-    margin-right: 18px;
+    margin-right: 12px;
   }
 .sociallinks:last-child {
   margin-right: 0px;
   }
 .sociallinks-container {
-  margin-top: 18px;
+  margin-top: 12px;
   margin-bottom: 18px;
   display: flex;
   align-items: left;
@@ -146,8 +146,11 @@
   
 @media screen and (max-width: 576px) {
 
-.sociallinks-container {
+.sociallinks-main-container {
+  margin-bottom: 12px;
+}
 
+.sociallinks-container {
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 18px;
@@ -157,10 +160,11 @@
   align-items: center;
   width: 100%;
   background-color: #ffffff;
-  }
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+  border: solid 1px rgba(0,0,0,.2);
+}
 
 .blackbox-sociallinks {
-  margin-top: -12px;
   background-color: black;
   display: block;
 }
@@ -169,5 +173,6 @@
   margin-right: 12px;
   margin-top: -6px;
 }
+
 
 }
