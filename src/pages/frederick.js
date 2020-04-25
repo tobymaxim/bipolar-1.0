@@ -182,7 +182,8 @@ export const query = graphql`
               city
               country
             }
-            start_date(formatString: "D. MMMM YYYY")
+            start_date(formatString: "D")
+            date(formatString: "MMM")
           }
         }
       }

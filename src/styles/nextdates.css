@@ -1,19 +1,90 @@
-.dates-date {
-  font-size: 0.85rem;
-  padding-left: 12px;
-  padding-bottom: 6px;
-  padding-top: 8px;
-  color: #fff;
-  font-weight: 550;
-  margin: 0;
-  letter-spacing: 0.5px;
+.dates-post {
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  padding: 12px;
+  padding-top: 12px;
+  background-color: #ffffff;
+  margin-bottom: 12px;
 }
 
-.dates-content {
-  font-size: 1rem;
+.dates-hr {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  background-color: rgba(0,0,0,0.15);
+}
+
+.dates-container {
+  margin-bottom: -25px;
+}
+
+.dates-row {
+  padding-top: 0px;
+  padding-bottom: 12px;
+}
+
+.dates-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dates-column-1 {
+  float: left;
+  max-width: 25%;
+  width: 58px;
+  display: block;
+}
+
+.dates-column-2 {
+  padding-left: 0px;
+  float: left;
+  max-width: 75%;
+}
+
+.dates-border {
+  border-color: rgba(0,0,0,0.15);
+  border: solid 1px;
+  height: 48px;
+  width: 40px;
+  color: #000000;
+  padding-top: 3px;
+}
+
+.dates-border:hover {
+  color: #ffffff;
+  border-color: black;
+  border: 0;
+  background-color: #000000;
+}
+
+.dates-date {
+  font-size: 1.1rem;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  font-weight: 500;
   margin: 0;
-  padding-top: 6px;
-  line-height: 1.25;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.dates-date:hover {
+  color: #ffffff;
+  border: 0px;
+}
+
+.dates-date2 {
+  font-size: 0.8rem;
+  padding-top: 0px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0px;
+  padding-left: 1px;
+  text-align: center;
+
+}
+
+.dates-content-container {
+  margin-left: -6px;
 }
 
 .date-query {
@@ -27,19 +98,33 @@
 .dates-venue-link {
   color: #000000;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  font-weight: 600;
+  line-height: 1;
 }
+
+.dates-artist-link {
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  padding-bottom: 6px;
+}
+
   
 .dates-venue-link:hover {
   text-decoration: underline;
 }
 
 @media screen and (max-width: 576px) {
-.dates-content {
-    font-size: 1rem;
-}
-.dates-date {
-    font-size: 0.85rem;
-    line-height: 1.2;
-    padding-bottom: 7px;
-}
+  .dates-row {
+    padding-top: 9px;
+    padding-bottom: 12px;
+  }
+  .dates-column-1 {
+    width: 14%;
+  }
 }

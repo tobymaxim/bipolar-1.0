@@ -1,6 +1,6 @@
 .about-text {
-    margin-top: 18px;
-    margin-bottom: 12px;
+    margin-top: -6px;
+    padding-bottom: 0px;
     margin-right: 6px;
 }
 
@@ -9,6 +9,11 @@
     float: left;
     margin-right: 12px;
     padding-top: 3px;   
+}
+
+.about-content {
+    margin-top: -21px;
+    text-align: justify;
 }
 
 .about-images {

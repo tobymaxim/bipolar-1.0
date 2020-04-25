@@ -9,8 +9,7 @@ const Blogpost = ({ data }) => (
           <h3 className="post-date">{post.node.date}</h3>
         </div>
         <div style={{ width: "100%" }} className="blog-post">
-          <h2 className="post-title">{post.node.title}</h2>
-          <hr className="post-hr" />
+          <h2 className="post-title-mobile">{post.node.title}</h2>
           <div className="content-container">
             <div className="blogpost-row">
               <div className="blogpost-column-1">
@@ -21,6 +20,10 @@ const Blogpost = ({ data }) => (
                 }
               </div>
               <div className="blogpost-column-2">
+                <div>
+                  <h2 className="post-title">{post.node.title}</h2>
+
+                </div>
                 <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
               </div>
             </div>

@@ -20,7 +20,8 @@ const AboutPage = ({ data }) => (
 
 
               <img className="about-image" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} />
-              <div className="post-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
+              <h2 className="post-title">Bipølar.</h2>
+              <div className="about-content" dangerouslySetInnerHTML={{ __html: post.node.content }} />
             </div>
           )}
           </div>
@@ -95,7 +96,8 @@ export const query = graphql`
             city
             country
           }
-          start_date(formatString: "D. MMMM YYYY")
+          start_date(formatString: "D")
+          date(formatString: "MMM")
         }
       }
     }
