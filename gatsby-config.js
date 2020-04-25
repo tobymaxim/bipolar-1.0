@@ -11,6 +11,7 @@ module.exports = {
     title: `BIPØLAR. Berlin`,
     description: `Art & Techno Collective`,
     author: `@admin`,
+    siteUrl: `https://bipolar.berlin`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
