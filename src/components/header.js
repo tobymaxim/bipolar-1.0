@@ -17,13 +17,13 @@ const Header = ({ children, data }) => {
     <div className="header-container">
       <header className="header">
         <div className="desktop-navbar">
-          <div className="header-video-container"><video loop="1" width="100%" height="250" controls="" autoPlay autoplay="1" name="media" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/Sequenz-03_9.mp4" type="video/mp4" ></video></div>
+          <div className="header-video-container"><video loop="1" width="100%" height="250" controls="" autoPlay autoplay="1" name="media" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/Sequenz-03_11.mp4" type="video/mp4" ></video></div>
           <Navbar data={data} />
         </div>
         <div className="mobile-navbar">
           <div className="header-mobile-container">
             <div className="header-mobile-column-left"></div>
-            <div className="header-mobile-column-middle"><img className="header-mobile-logo" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/bipolar_logo.svg" alt=""></img></div>
+            <div className="header-mobile-column-middle"><img className="header-mobile-logo" src="http://54499171.swh.strato-hosting.eu/bipolarjs/wp-content/uploads/2020/04/bipolar_logo-0.svg" alt=""></img></div>
             <div className="header-mobile-column-right"><DrawerToggleButton click={drawerToggleClickHandler} /></div>
           </div>
           {<SideDrawer data={data} click={backdropClickHandler} show={sideDrawerOpen} />}
