@@ -56,6 +56,10 @@ export const query = graphql`
       edges {
         node {
           title
+          description
+          cost_details {
+            currency_symbol
+          }
           categories {
             name
             description

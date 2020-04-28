@@ -171,6 +171,10 @@ export const query = graphql`
     allTribeEvents(sort: {order: ASC, fields: start_date}, filter: {categories: {elemMatch: {name: {eq: "Frederick"}}}}) {
         edges {
           node {
+            cost_details {
+              currency_symbol
+            }
+            description
             title
             categories {
               name

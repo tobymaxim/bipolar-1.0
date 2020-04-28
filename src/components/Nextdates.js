@@ -18,6 +18,7 @@ const Nextdates = ({ data }) => (
               <div className="dates-content-container">
                 <div className="venue-container"><a className="dates-venue-link" href={post.node.venue.website}>{post.node.venue.venue}</a></div>
                 <div><a className="dates-artist-link" href={post.node.website}>{post.node.title}</a> | {post.node.venue.city}</div>
+                <div dangerouslySetInnerHTML={{ __html: post.node.description }} />
               </div>
             </div>
           </div>
@@ -32,3 +33,4 @@ const Nextdates = ({ data }) => (
 )
 
 export default Nextdates
+
