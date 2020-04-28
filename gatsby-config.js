@@ -114,6 +114,15 @@ module.exports = {
         // baseUrl should include the protocol (https or http)
         baseUrl: "http://54499171.swh.strato-hosting.eu/bipolarjs/",
       }
-    }
+    },
+    
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-102210248-1",
+      },
+    },
+    
   ],
 }
