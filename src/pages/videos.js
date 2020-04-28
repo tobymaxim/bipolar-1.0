@@ -94,25 +94,29 @@ export const query = graphql`
           }
         }
       }
-    allTribeEvents {
-      edges {
-        node {
-          title
-          categories {
-            name
-          }
-          website
-          venue {
-            venue
+      allTribeEvents(sort: {order: ASC, fields: start_date}) {
+        edges {
+          node {
+            title
+            categories {
+              name
+              description
+            }
             website
-            city
-            country
+            venue {
+              venue
+              website
+              city
+              country
+            }
+            start_date(formatString: "MMM")
+            date(formatString: "MMM")
+            start_date_details {
+              day
+            }
           }
-          start_date(formatString: "D")
-          date(formatString: "MMM")
         }
       }
-    }
     allWordpressWpApiMenusMenusItems {
       edges {
         node {

@@ -52,12 +52,13 @@ export const query = graphql`
         }
       }
     }
-    allTribeEvents {
+    allTribeEvents(sort: {order: ASC, fields: start_date}) {
       edges {
         node {
           title
           categories {
             name
+            description
           }
           website
           venue {
@@ -66,8 +67,11 @@ export const query = graphql`
             city
             country
           }
-          start_date(formatString: "D")
+          start_date(formatString: "MMM")
           date(formatString: "MMM")
+          start_date_details {
+            day
+          }
         }
       }
     }
