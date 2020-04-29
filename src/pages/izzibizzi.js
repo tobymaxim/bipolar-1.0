@@ -18,7 +18,7 @@ const IzziBizziPage = ({ data }) => (
             <div>
               <div className="artists-container">
                 <div className="artists-container-left">
-                  <a href={post.node.featured_media.localFile.url}><img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} /></a>
+                  <a href={post.node.featured_media.localFile.url} target="_blank" rel="noopener noreferrer"><img className="artists-images" src={post.node.featured_media.localFile.childImageSharp.resolutions.src} alt={post.node.featured_media.alt_text} /></a>
                   <div className="artists-sociallinks-container">
                     {post.node.acf && post.node.acf.resident_advisor &&
                       <a className="artists-sociallinks" href={post.node.acf && post.node.acf.resident_advisor} target="_blank" rel="noopener noreferrer"><div className="residentadvisor-icon"></div></a>}
