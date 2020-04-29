@@ -100,12 +100,12 @@ export const query = graphql`
         }
       }
     }
-    allInstaNode {
+    allInstaNode(sort: {fields: timestamp, order: DESC}) {
       edges {
         node {
           localFile {
             childImageSharp {
-              resolutions(cropFocus: CENTER) {
+              resolutions(cropFocus: CENTER, height: 580, width: 580) {
                 src
               }
             }
